@@ -1,0 +1,254 @@
+/* Colors:
+Dark blue - #3E454C
+Blue - #2185C5
+Light blue - #7ECEFD
+Beige - #FFF6E5
+Salmon - #FF7F66
+*/
+
+/* Define the style for the entire website */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #ffffff;
+    background-color: #2185C5;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Define the style for the website name */
+#website-name {
+    font-family: 'Pacifico', cursive;
+}
+
+/* Define the style for some website elements */
+#showcase,
+#login-form,
+#website-name,
+#register-form,
+#website-banner {
+    text-align: center;
+}
+
+/* Basic style for the header and footer tags */
+header,
+footer {
+    width: 100%;
+    background-color: #3E454C;
+}
+
+header {
+    min-height: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+/*
+Apply a natural box layout model to all elements,
+but allowing components to change.
+Modified to support earlier versions of IE, Firefox, Android and iOS.*/
+html {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+}
+
+/* Define the container class */
+.container {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+/* Define the row class */
+.row::before,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .col-m-1 {
+        width: 8.33%;
+    }
+
+    .col-m-2 {
+        width: 16.66%;
+    }
+
+    .col-m-3 {
+        width: 25%;
+    }
+
+    .col-m-4 {
+        width: 33.33%;
+    }
+
+    .col-m-5 {
+        width: 41.66%;
+    }
+
+    .col-m-6 {
+        width: 50%;
+    }
+
+    .col-m-7 {
+        width: 58.33%;
+    }
+
+    .col-m-8 {
+        width: 66.66%;
+    }
+
+    .col-m-9 {
+        width: 75%;
+    }
+
+    .col-m-10 {
+        width: 83.33%;
+    }
+
+    .col-m-11 {
+        width: 91.66%;
+    }
+
+    .col-m-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+/* Define the style for forms */
+[type=color],
+[type=date],
+[type=datetime],
+[type=datetime-local],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=url],
+[type=week],
+[type=time],
+select,
+textarea {
+    display: block;
+    padding: .5rem;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    font-size: .95rem;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    font-weight: 600;
+    font-size: .9rem;
+    display: block;
+    margin: .5rem 0;
+}
+
+/* Define the style for buttons */
+.button,
+a.button,
+button,
+[type=reset],
+[type=submit],
+[type=button] {
+    display: inline-block;
+    background: #FF7F66;
+    border: 1px solid #FF7F66;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: .95rem;
+    font-family: 'Raleway', sans-serif;
+    padding: .5rem 1rem;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    line-height: 1;
+    margin: .25rem 0;
+    border-radius: 4px
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
