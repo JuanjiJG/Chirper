@@ -1,12 +1,23 @@
 /* A Flexbox container is an element who has Flexbox items on it */
-/* To fix the footer placement issue, we need to tell the container to use all the available space */
-.flex-container {
+/* To fix the footer placement issue, we need to tell the <body> container to use all the available space */
+.body-flex-container {
     display: flex; /* Display all the elements in a flex mode */
+    display: -webkit-flex; /* Safari and iOS compatibility */
     min-height: 100vh; /* VH is the measurement unit of the viewport */
-    flex-direction: column; /* Place all the elements like columns */
+    flex-direction: column; /* Place all the elements in a column layout */
 }
 
 /* A Flexbox item is an element who can be placed inside a Flexbox container */
-.flex-item {
-    flex: 1; /* This tells that all the elements with the flx-item class are the first element to be placed */
+/* In this case, we define a class for the <main> tag */
+.main-flex-item {
+    flex: 1;
+}
+
+.flex-container {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-flow: row nowrap; /* Safari */
+    flex-flow: row nowrap;
+    -webkit-justify-content: flex-start; /* Safari */
+    justify-content: flex-start;
 }

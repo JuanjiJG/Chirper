@@ -6,47 +6,289 @@ Beige - #FFF6E5
 Salmon - #FF7F66
 */
 
-/* Define the style for the entire website */
+html {
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    min-height: 100%;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.header-grid-container {
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+    grid-template-areas:
+            "website-banner"
+            "website-name"
+            "login-form";
+}
+
+.header-cover-grid-container {
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+    grid-template-areas:
+            "website-banner"
+            "website-name"
+            "user-info-panel"
+            "navigation-panel";
+}
+
+.main-grid-container {
+    display: grid;
+    grid-template-areas:
+            "showcase"
+            "register-form";
+}
+
+.main-cover-grid-container {
+    display: grid;
+    grid-template-areas:
+        "all-users"
+        "last-posts"
+        "connected-users";
+}
+
+#all-users {
+    grid-area: all-users;
+    background-color: #3E454C;
+    height: 33vh;
+    overflow-y: scroll;
+    box-shadow: 0px 2px 1px #555;
+    z-index: 5;
+}
+#all-users h3 {
+    text-align: center;
+}
+
+#connected-users {
+    grid-area: connected-users;
+    background-color: #7ECEFD;
+    height: 33vh;
+    overflow-y: scroll;
+    box-shadow: 2px 0px 1px #555;
+    z-index: 3;
+}
+
+#connected-users h3 {
+    text-align: center;
+}
+
+#last-posts {
+    grid-area: last-posts;
+    height: 66vh;
+    background-color: #FFF6E5;
+    color: #3E454C;
+    box-shadow: 2px 0px 1px #555;
+    z-index: 4;
+}
+
+#last-posts h3 {
+    text-align: center;
+}
+
+header {
+    grid-area: header;
+    background-color: #3E454C;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    background-color: #3E454C;
+}
+
+.footer-container {
+    grid-area: footer;
+    text-align: center;
+}
+
+#register-form {
+    grid-area: register-form;
+}
+
+#register-form h1 {
+    text-align: center;
+}
+
+#showcase {
+    grid-area: showcase;
+    text-align: center;
+}
+
+#user-info-panel {
+    grid-area: user-info-panel;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0;
+}
+
+#user-info-panel img {
+    margin: 10px;
+}
+
+#website-banner {
+    grid-area: website-banner;
+    justify-self: center;
+    margin: 10px;
+}
+
+#website-name {
+    grid-area: website-name;
+    font-family: 'Pacifico', sans-serif;
+    font-size: 1.5em;
+    line-height: 0;
+    justify-self: center;
+}
+
+/* Unvisited link */
+#website-name a:link,
+.navigation a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Visited link */
+#website-name a:visited,
+.navigation a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Mouse over link */
+#website-name a:hover,
+.navigation a:hover {
+    color: #FF7F66;
+}
+
+.navigation a:hover {
+    color: #3E454C;
+}
+
+/* Selected link */
+#website-name a:active,
+.navigation a:active {
+    color: #7ECEFD;
+}
+
+#login-form {
+    grid-area: login-form;
+    padding: 0 10%;
+}
+
+#navigation-panel {
+    grid-area: navigation-panel;
+}
+
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
     color: #ffffff;
     background-color: #2185C5;
     font-family: 'Raleway', sans-serif;
 }
 
-/* Define the style for the website name */
-#website-name {
-    font-family: 'Pacifico', cursive;
+@media (min-width: 768px) {
+    .header-grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "website-banner website-name login-form";
+    }
+
+    .header-cover-grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "website-banner website-name user-info-panel"
+            "navigation-panel navigation-panel navigation-panel";
+    }
+
+    .main-grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "showcase register-form";
+    }
+
+    #all-users {
+        height: 33vh;
+    }
+
+    #connected-users {
+        height: 33vh;
+    }
+
+    #last-posts {
+        height: 66vh;
+    }
 }
 
-/* Define the style for some website elements */
-#showcase,
-#login-form,
-#website-name,
-#register-form,
-#website-banner {
-    text-align: center;
+@media (min-width: 1024px) {
+    .main-cover-grid-container {
+        grid-template-areas:
+                "all-users all-users all-users all-users all-users all-users"
+                "last-posts last-posts last-posts last-posts last-posts connected-users";
+    }
+
+    #all-users {
+        height: 33vh;
+    }
+
+    #connected-users {
+        height: 66vh;
+    }
+
+    #last-posts {
+        height: 66vh;
+    }
 }
 
-/* Basic style for the header and footer tags */
-header,
-footer,
-nav {
-    width: 100%;
-    background-color: #3E454C;
-}
+@media (min-width: 1440px) {
+    .main-cover-grid-container {
+        grid-template-areas:
+                "all-users all-users all-users all-users all-users all-users"
+                "last-posts last-posts last-posts last-posts last-posts connected-users";
+    }
 
-footer {
-    text-align: center;
-}
+    #all-users {
+        height: 25vh;
+    }
 
-nav {
-    text-align: center;
+    #connected-users {
+        height: 75vh;
+    }
+
+    #last-posts {
+        height: 75vh;
+    }
 }
 
 /* Define the style for forms */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    flex: 1;
+}
+
+input {
+    flex: 2;
+}
+
 [type=color],
 [type=date],
 [type=datetime],
@@ -63,25 +305,15 @@ nav {
 [type=time],
 select,
 textarea {
-    display: block;
     padding: .25rem;
-    vertical-align: middle;
-    width: 100%;
-    max-width: 100%;
+    width: 70%;
     border: 1px solid #cdcdcd;
     border-radius: 4px;
-    font-size: .95rem;
-}
-
-form {
-    text-align: left;
 }
 
 label {
-    font-weight: 600;
-    font-size: .9rem;
-    display: block;
-    margin: .5rem 0;
+    font-weight: bold;
+    margin: .25rem;
 }
 
 /* Define the style for buttons */
@@ -91,21 +323,17 @@ button,
 [type=reset],
 [type=submit],
 [type=button] {
-    display: inline-block;
     background: #FF7F66;
     border: 1px solid #FF7F66;
     color: white;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
     font-size: .95rem;
     font-family: 'Raleway', sans-serif;
-    padding: .5rem .5rem;
-    vertical-align: middle;
-    white-space: nowrap;
-    cursor: pointer;
+    padding: .5rem;
     line-height: 1;
     margin: .25rem 0;
-    border-radius: 4px
+    border-radius: 4px;
 }
 
 button::-moz-focus-inner,
@@ -115,7 +343,46 @@ button::-moz-focus-inner,
     padding: 0;
 }
 
-.connected-users {
-    overflow: scroll;
-    max-height: 25vh;
+.navigation {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    align-items: center;
+}
+
+.navigation a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    line-height: 2.5;
+
+    margin: .5rem;
+    padding: .5rem;
+    font-weight: 600;
+    background: #7ECEFD;
+    border: 1px solid #7ECEFD;
+    border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+    .navigation {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navigation {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
 }

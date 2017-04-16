@@ -5,74 +5,78 @@
   <meta charset="UTF-8">
   <title>Página de inicio - Chirper</title>
   <!-- Meta tag fot the latest Internet Explorer rendering mode -->
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Meta tag for responsive web design -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Custom font -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico|Raleway">
-  <!-- Styles -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/flexbox.css">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/responsive.css">
-  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Pacifico|Raleway">
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="img/favicon.png">
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
-<body class="flex-container">
-  <header>
-    <section class="row container">
-      <section class="col-2 col-m-3" id="website-banner">
-        <img src="img/favicon.png" alt="Logo de Chirper">
-      </section>
-      <section class="col-8 col-m-6" id="website-name">
-        <h1>Chirper</h1>
-      </section>
-      <section class="col-2 col-m-3" id="login-form">
-        <form name="login-form" action="portada.html" method="post">
-          <label for="login-username">Usuario *</label>
-          <input id="login-username" name="username" type="text" required="required">
-          <label for="login-password">Contraseña *</label>
-          <input id="login-password" name="password" type="password" required="required">
-          <input type="submit" name="submit" value="Iniciar sesión">
-        </form>
-      </section>
+<body class="grid-container">
+<header>
+  <section class="header-grid-container">
+    <section id="website-banner">
+      <a href="portada.html"><img height="100px" src="img/logo.png"
+                                  alt="Logo de Chirper"></a>
     </section>
-  </header>
-  <main class="flex-item">
-    <section class="row container">
-      <section class="col-7 col-m-7" id="showcase">
-        <h1>¡Bienvenido a Chirper!</h1>
-        <p>La red social para los que les encanta parlotear sin parar.</p>
-        <i class="fa fa-users fa-5x"></i>
-        <p>Regístrate y conecta con tus amigos. Intercambia tus pensamientos con ellos y cuéntales qué estas haciendo.</p>
-        <i class="fa fa-commenting fa-5x"></i>
-        <p>Descubre los perfiles de los demás. ¡Mira lo que se cuece por la red y sé parte de ello dejando tus propios comentarios!</p>
-      </section>
-      <section class="col-5 col-m-5" id="register-form">
-        <h1>¡Regístrate ahora en Chirper!</h1>
-        <form name="register-form" action="#" method="post">
-          <label for="first-name">Nombre *</label>
-          <input id="first-name" type="text" required="required">
-          <label for="last-name">Apellidos *</label>
-          <input id="last-name" type="text" required="required">
-          <label for="username">Usuario *</label>
-          <input id="username" type="text" required="required">
-          <label for="password">Contraseña *</label>
-          <input id="password" type="password" required="required">
-          <label for="repeat-password">Repite la contraseña *</label>
-          <input id="repeat-password" type="password" required="required">
-          <h6>(Todos los campos son obligatorios)</h6>
-          <input type="submit" name="submit" value="Registrarse">
-          <input type="reset" name="reset" value="Reiniciar formulario">
-        </form>
-      </section>
+    <section id="website-name">
+      <h1><a href="portada.html">Chirper</a></h1>
     </section>
-  </main>
-  <footer>
-    <section class="row container">
-      Contacto | Acerca de
+    <section id="login-form">
+      <form name="login-form" action="portada.html" method="post">
+        <label class="label" for="login-username">Usuario</label>
+        <input class="field" id="login-username" name="username" type="text"
+               required="required">
+        <label class="label" for="login-password">Contraseña</label>
+        <input class="field" id="login-password" name="password" type="password"
+               required="required">
+        <input type="submit" name="submit" value="Iniciar sesión">
+      </form>
     </section>
-  </footer>
+  </section>
+</header>
+<main>
+  <section class="main-grid-container">
+    <section id="showcase">
+      <h1>¡Bienvenido a Chirper!</h1>
+      <p>La red social para los que les encanta parlotear sin parar.</p>
+      <i class="fa fa-users fa-5x"></i>
+      <p>Regístrate y conecta con tus amigos. Intercambia tus pensamientos con
+        ellos y cuéntales qué estas haciendo.</p>
+      <i class="fa fa-commenting fa-5x"></i>
+      <p>Descubre los perfiles de los demás. ¡Mira lo que se cuece por la red y
+        sé parte de ello dejando tus propios comentarios!</p>
+    </section>
+    <section id="register-form">
+      <h1>¡Regístrate ahora en Chirper!</h1>
+      <form name="register-form" action="#" method="post">
+        <label class="label" for="first-name">Nombre</label>
+        <input class="field" id="first-name" type="text" required="required">
+        <label class="label" for="last-name">Apellidos</label>
+        <input class="field" id="last-name" type="text" required="required">
+        <label class="label" for="username">Usuario</label>
+        <input class="field" id="username" type="text" required="required">
+        <label class="label" for="password">Contraseña</label>
+        <input class="field" id="password" type="password" required="required">
+        <label class="label" for="repeat-password">Repite la contraseña</label>
+        <input class="field" id="repeat-password" type="password"
+               required="required">
+        <input type="submit" name="submit" value="Registrarse">
+        <input type="reset" name="reset" value="Reiniciar formulario">
+      </form>
+    </section>
+  </section>
+</main>
+<footer>
+  <section class="footer-container">
+    <p>Contacto | Acerca de</p>
+  </section>
+</footer>
 </body>
 </html>

@@ -5,82 +5,59 @@
   <meta charset="UTF-8">
   <title>Portada - Chirper</title>
   <!-- Meta tag fot the latest Internet Explorer rendering mode -->
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Meta tag for responsive web design -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Custom font -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico|Raleway">
-  <!-- Styles -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/flexbox.css">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/responsive.css">
-  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Pacifico|Raleway">
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="img/favicon.png">
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
-<body class="flex-container">
+<body class="grid-container">
 <header>
-  <section class="row container">
-    <section class="col-2 col-m-3" id="website-banner">
-      <img src="img/favicon.png" alt="Logo de Chirper">
+  <section class="header-cover-grid-container">
+    <section id="website-banner">
+      <a href="portada.html"><img height="100px" src="img/logo.png"
+                                  alt="Logo de Chirper"></a>
     </section>
-    <section class="col-8 col-m-6" id="website-name">
-      <h1>Chirper</h1>
+    <section id="website-name">
+      <h1><a href="portada.html">Chirper</a></h1>
     </section>
-    <section class="col-2 col-m-3" id="login-form">
-      <form name="login-form" action="portada.html" method="post">
-        <label for="login-username">Usuario *</label>
-        <input id="login-username" name="username" type="text" required="required">
-        <label for="login-password">Contraseña *</label>
-        <input id="login-password" name="password" type="password" required="required">
-        <input type="submit" name="submit" value="Iniciar sesión">
-      </form>
+    <section id="user-info-panel">
+      <h3>Hola, usuario</h3>
+      <img height="50px" src="img/logo.png" alt="Imagen del usuario">
+      <a class="button" href="index.html">Cerrar sesión</a>
     </section>
+    <nav id="navigation-panel">
+      <ul class="navigation">
+        <li><a href="#">Biografía</a></li>
+        <li><a href="#">Fotos</a></li>
+        <li><a href="#">Información</a></li>
+      </ul>
+    </nav>
   </section>
-  <nav class="row container">
-    <ul>
-      <li>Biografía</li>
-      <li>Fotos</li>
-      <li>Información</li>
-    </ul>
-  </nav>
 </header>
-<main class="flex-item">
-  <section class="row container" id="all-users">
-
-  </section>
-  <section class="row container" id="posts-and-connected">
-    <section class="col-8 col-m-9">
+<main>
+  <section class="main-cover-grid-container">
+    <section id="all-users">
+      <h3>Todos los usuarios</h3>
+    </section>
+    <section id="last-posts">
       <h3>Últimas entradas</h3>
     </section>
-    <aside class="col-4 col-m-3 connected-users">
+    <section id="connected-users">
       <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-      <h3>Usuarios conectados</h3>
-    </aside>
+    </section>
   </section>
 </main>
 <footer>
-  <section class="row container">
-    Contacto | Acerca de
+  <section class="footer-container">
+    <p>Contacto | Acerca de</p>
   </section>
 </footer>
 </body>
