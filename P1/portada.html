@@ -4,7 +4,7 @@
   <!-- Basic page information -->
   <meta charset="UTF-8">
   <title>Portada - Chirper</title>
-  <!-- Meta tag fot the latest Internet Explorer rendering mode -->
+  <!-- Meta tag for the latest Internet Explorer rendering mode -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Meta tag for responsive web design -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,7 @@
   <link rel="icon" type="image/png" href="img/favicon.png">
   <!-- Styles -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/grid.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
@@ -46,21 +47,89 @@
   <section class="main-cover-grid-container">
     <section id="all-users">
       <h3>Todos los usuarios</h3>
-      <p>No hay usuarios registrados en Chirper.</p>
+      <ul id="all-users-list">
+        <li>
+          <p>Pepe</p>
+          <img src="img/logo.png" alt="Imagen del usuario">
+        </li>
+        <li>
+          <p>Pepe</p>
+          <img src="img/logo.png" alt="Imagen del usuario">
+        </li>
+        <li>
+          <p>Pepe</p>
+          <img src="img/logo.png" alt="Imagen del usuario">
+        </li>
+        <li>
+          <p>Pepe</p>
+          <img src="img/logo.png" alt="Imagen del usuario">
+        </li>
+        <li>
+          <p>Pepe</p>
+          <img src="img/logo.png" alt="Imagen del usuario">
+        </li>
+        <li>
+          <p>Pepe</p>
+          <img src="img/logo.png" alt="Imagen del usuario">
+        </li>
+      </ul>
     </section>
     <section id="last-posts">
       <h3>Últimas entradas</h3>
-      <p>No hay entradas en Chirper.</p>
+      <ul id="last-posts-list">
+        <li class="post-card">
+          <p class="post-card-user">Pepe</p>
+          <img class="post-card-user-photo" src="img/logo.png"
+               alt="Imagen del usuario">
+          <p class="post-card-time">Hace 10 horas</p>
+          <h4 class="post-card-title">Título de la entrada larguisimo</h4>
+          <section class="post-card-content">
+            <p>Contenido de la entrada.
+              Contenido de la entrada. Contenido de la entrada.
+              Contenido de la entrada. Contenido de la entrada.
+              Contenido de la entrada. Contenido de la entrada.
+              Contenido de la entrada. Contenido de la entrada.</p>
+          </section>
+        </li>
+      </ul>
+      <section id="last-post-pagination">
+
+      </section>
     </section>
     <section id="connected-users">
       <h3>Usuarios conectados</h3>
-      <p>No hay usuarios conectados en Chirper en este momento.</p>
+      <ul id="connected-users-list">
+        <li>
+          <p>Pepe</p>
+          <img src="img/logo.png" alt="Imagen del usuario">
+        </li>
+        <li>
+          <p>Pepe</p>
+          <img src="img/logo.png" alt="Imagen del usuario">
+        </li>
+        <li>
+          <p>Pepe</p>
+          <img src="img/logo.png" alt="Imagen del usuario">
+        </li>
+        <li>
+          <p>Pepe</p>
+          <img src="img/logo.png" alt="Imagen del usuario">
+        </li>
+        <li>
+          <p>Pepe</p>
+          <img src="img/logo.png" alt="Imagen del usuario">
+        </li>
+        <li>
+          <p>Pepe</p>
+          <img src="img/logo.png" alt="Imagen del usuario">
+        </li>
+      </ul>
     </section>
   </section>
 </main>
 <footer>
   <section class="footer-container">
-    <p>Contacto | Acerca de</p>
+    <p><a>Contacto</a> | <a>Acerca de</a></p>
   </section>
 </footer>
 </body>

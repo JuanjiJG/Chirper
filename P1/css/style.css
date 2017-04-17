@@ -8,6 +8,9 @@ Salmon - #FF7F66
 
 html {
     height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .grid-container {
@@ -60,7 +63,7 @@ html {
     grid-area: all-users;
     background-color: #3E454C;
     height: 30vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     box-shadow: 0px 2px 1px #555;
     z-index: 5;
     padding: 10px;
@@ -69,11 +72,24 @@ html {
     text-align: center;
 }
 
+#last-posts {
+    grid-area: last-posts;
+    height: 60vh;
+    background-color: #FFF6E5;
+    color: #3E454C;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+#last-posts h3 {
+    text-align: center;
+}
+
 #connected-users {
     grid-area: connected-users;
     background-color: #7ECEFD;
     height: 30vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding: 10px;
 }
 
@@ -81,16 +97,88 @@ html {
     text-align: center;
 }
 
-#last-posts {
-    grid-area: last-posts;
-    height: 60vh;
-    background-color: #FFF6E5;
-    color: #3E454C;
-    padding: 10px;
+#connected-users-list,
+#all-users-list,
+#last-posts-list {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
 }
 
-#last-posts h3 {
+.post-card {
+    display: grid;
+    grid-template-areas:
+        "post-card-user       .                 .                "
+        "post-card-user-photo .                 post-card-time   "
+        "post-card-user-photo .                 .                "
+        "post-card-title      post-card-title   post-card-title  "
+        "post-card-content    post-card-content post-card-content"
+        "post-card-content    post-card-content post-card-content";
+}
+
+.post-card-user {
+    grid-area: post-card-user;
+}
+
+.post-card-user-photo {
+    grid-area: post-card-user-photo;
+}
+
+.post-card-time {
+    grid-area: post-card-time;
+}
+
+.post-card-title {
+    grid-area: post-card-title;
+}
+
+.post-card-content {
+    grid-area: post-card-content;
+}
+
+#connected-users-list img,
+#all-users-list img,
+#last-posts-list img {
+    height: 50px;
+}
+
+#connected-users-list li {
+    padding: 5px;
+    margin: 5px;
+    min-width: 100px;
     text-align: center;
+    box-shadow: 2px 2px 2px #555;
+    border-radius: 5px;
+    background-color: #3E454C;
+    box-sizing: border-box;
+    line-height: 0;
+    font-weight: bold;
+}
+
+#last-posts-list li {
+    padding: 5px;
+    margin: 5px;
+    min-width: 100px;
+    box-shadow: 2px 2px 2px #999;
+    border-radius: 5px;
+    background-color: #fff;
+    box-sizing: border-box;
+    line-height: 0;
+}
+
+#all-users-list li {
+    padding: 5px;
+    margin: 5px;
+    min-width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #FF7F66;
+    box-sizing: border-box;
+    line-height: 0;
+    font-weight: bold;
 }
 
 header {
@@ -117,6 +205,7 @@ footer {
 
 #register-form {
     grid-area: register-form;
+    padding: 10px;
 }
 
 #register-form h1 {
@@ -126,6 +215,7 @@ footer {
 #showcase {
     grid-area: showcase;
     text-align: center;
+    padding: 10px;
 }
 
 #user-info-panel {
@@ -196,7 +286,6 @@ footer {
 body {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0;
     color: #ffffff;
     background-color: #2185C5;
     font-family: 'Raleway', sans-serif;
@@ -204,12 +293,12 @@ body {
 
 @media (min-width: 768px) {
     .header-grid-container {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
         grid-template-areas: "website-banner website-name login-form";
     }
 
     .header-cover-grid-container {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: auto;
         grid-template-areas:
             "website-banner website-name user-info-panel"
