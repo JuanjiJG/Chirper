@@ -133,6 +133,7 @@ html {
 
 .post-card-title {
     grid-area: post-card-title;
+    text-align: left !important;
 }
 
 .post-card-content {
@@ -166,7 +167,6 @@ html {
     border-radius: 5px;
     background-color: #fff;
     box-sizing: border-box;
-    line-height: 0;
 }
 
 #all-users-list li {
@@ -321,11 +321,15 @@ body {
     #last-posts {
         height: 60vh;
     }
+
+    .post-card {
+        width: 25%;
+    }
 }
 
 @media (min-width: 1024px) {
     .main-cover-grid-container {
-        grid-template-columns: 0.7fr 0.3fr;
+        grid-template-columns: 0.8fr 0.2fr;
         grid-template-areas:
                 "all-users all-users"
                 "last-posts connected-users";
@@ -341,6 +345,10 @@ body {
 
     #last-posts {
         height: 60vh;
+    }
+
+    .post-card {
+        width: 30%;
     }
 }
 
