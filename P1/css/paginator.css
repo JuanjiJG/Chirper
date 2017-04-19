@@ -1,0 +1,43 @@
+/* Stylesheet for the paginator of the Last Posts section */
+
+/* Style for the paginator list */
+#last-post-pagination ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+/* Style for the paginator list elements */
+#last-post-pagination li {
+    display: inline-block;
+    border-radius: 4px;
+    margin: 20px 5px;
+}
+
+/* Style for the active page */
+#last-post-pagination a.pagination-active {
+    background-color: #FF7F66;
+}
+
+#last-post-pagination a {
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #7ECEFD;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the paginator links */
+#last-post-pagination a:link {
+    text-decoration: none;
+    color: white;
+}
+
+#last-post-pagination a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#last-post-pagination a:hover {
+    background-color: #2185C5;
+}

@@ -23,11 +23,11 @@ body {
 }
 
 /* Special background color for the main header and footer*/
-header {
+header.main-header {
     background-color: #3E454C;
 }
 
-footer {
+footer.main-footer {
     background-color: #3E454C;
 }
 
@@ -46,7 +46,7 @@ footer ul {
     background-color: #3E454C;
     height: 30vh;
     overflow-y: auto;
-    box-shadow: 0px 2px 1px #555;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
     z-index: 5;
     padding: 10px;
 }
@@ -86,6 +86,13 @@ footer ul {
     line-height: 0;
 }
 
+/* If the content is too large, make the post card hide it with ellipsis */
+.post-card-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .post-card article {
     padding: 0 10px;
 }
@@ -100,17 +107,21 @@ footer ul {
     border-radius: 25px;
 }
 
+#all-users-list img,
+.post-card-user-photo {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
 /* Style for the list elements of Connected Users */
 #connected-users-list li {
     padding: 5px;
     margin: 5px;
     min-width: 100px;
     text-align: center;
-    box-shadow: 2px 2px 2px #555;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     background-color: #3E454C;
     box-sizing: border-box;
-    line-height: 0;
     font-weight: bold;
 }
 
@@ -119,7 +130,7 @@ footer ul {
     padding: 5px;
     margin: 5px;
     min-width: 100px;
-    box-shadow: 2px 2px 2px #999;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     background-color: #fff;
     box-sizing: border-box;
@@ -134,7 +145,6 @@ footer ul {
     border-radius: 5px;
     background-color: #FF7F66;
     box-sizing: border-box;
-    line-height: 0;
     font-weight: bold;
 }
 
@@ -183,41 +193,39 @@ footer ul {
 }
 
 /* Unvisited link */
-#website-name a:link,
 .navigation a:link,
 .footer-container a:link,
-#user-info-panel a:link {
+#website-name a:link,
+#user-info-panel a:link,
+#connected-users-list a:link,
+#all-users-list a:link {
     color: #fff;
     text-decoration: none;
 }
 
 /* Visited link */
-#website-name a:visited,
 .navigation a:visited,
 .footer-container a:visited,
-#user-info-panel a:visited {
+#website-name a:visited,
+#user-info-panel a:visited,
+#connected-users-list a:visited,
+#all-users-list a:visited {
     color: #fff;
     text-decoration: none;
 }
 
 /* Mouse over link */
-#website-name a:hover,
 .footer-container a:hover,
-#user-info-panel a:hover {
+#website-name a:hover,
+#connected-users-list a:hover {
     color: #FF7F66;
 }
 
 /* Different hover color for the navigation class */
-.navigation a:hover {
+.navigation a:hover,
+#user-info-panel a:hover,
+#all-users-list a:hover {
     color: #3E454C;
-}
-
-/* Selected link */
-#website-name a:active,
-.navigation a:active,
-.footer-container a:active,
-#user-info-panel a:active {
-    color: #7ECEFD;
 }
 
 /* Section for the style of navigation class */

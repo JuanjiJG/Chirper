@@ -165,6 +165,14 @@ header {
     justify-content: space-around;
 }
 
+/* The user box itself is a flexbox in a column mode */
+#connected-users-list li,
+#all-users-list li {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
 /* Structure of forms, using CSS3 Flexbox */
 /* The forms' elements are laid out in a column mode */
 form {
