@@ -14,8 +14,9 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="img/favicon.png">
   <!-- Styles -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/grid.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/forms.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
@@ -54,6 +55,10 @@
       <p>Descubre los perfiles de los demás. ¡Mira lo que se cuece por la red y
         sé parte de ello dejando tus propios comentarios!</p>
     </section>
+    <!-- This checkbox is hidden -->
+    <!-- Its function is to provide a switch to change the register form with the contact information -->
+    <!-- It has to be the first element in order to function properly -->
+    <input type="checkbox" id="contact-information-checkbox">
     <section id="register-form">
       <h1>¡Regístrate ahora en Chirper!</h1>
       <form name="register-form" action="#" method="post">
@@ -72,12 +77,25 @@
         <input type="reset" name="reset" value="Reiniciar formulario">
       </form>
     </section>
+    <section id="contact-information">
+      <h1>Probando la sección de contacto</h1>
+      <p>Lorem ipsum</p>
+    </section>
   </section>
 </main>
 <footer>
-  <section class="footer-container">
-    <p><a>Contacto</a> | <a>Acerca de</a></p>
-  </section>
+  <nav>
+    <ul class="footer-container">
+      <li>
+        <a href="index.html">
+          <label id="label-contact-information" for="contact-information-checkbox">Contacto</label>
+        </a>
+      </li>
+      <li>
+        <a href="como_se_hizo.pdf">Acerca de</a>
+      </li>
+    </ul>
+  </nav>
 </footer>
 </body>
 </html>

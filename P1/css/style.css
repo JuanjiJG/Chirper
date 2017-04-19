@@ -13,54 +13,7 @@ html {
     box-sizing: border-box;
 }
 
-.grid-container {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-}
-
-.header-grid-container {
-    display: grid;
-    grid-gap: 10px;
-    align-items: center;
-    grid-template-areas:
-            "website-banner"
-            "website-name"
-            "login-form";
-}
-
-.header-cover-grid-container {
-    display: grid;
-    grid-gap: 10px;
-    align-items: center;
-    grid-template-areas:
-            "website-banner"
-            "website-name"
-            "user-info-panel"
-            "navigation-panel";
-}
-
-.main-grid-container {
-    display: grid;
-    grid-template-areas:
-            "showcase"
-            "register-form";
-}
-
-.main-cover-grid-container {
-    display: grid;
-    grid-template-areas:
-        "all-users"
-        "last-posts"
-        "connected-users";
-}
-
 #all-users {
-    grid-area: all-users;
     background-color: #3E454C;
     height: 30vh;
     overflow-y: auto;
@@ -68,12 +21,12 @@ html {
     z-index: 5;
     padding: 10px;
 }
+
 #all-users h3 {
     text-align: center;
 }
 
 #last-posts {
-    grid-area: last-posts;
     height: 60vh;
     background-color: #FFF6E5;
     color: #3E454C;
@@ -86,7 +39,6 @@ html {
 }
 
 #connected-users {
-    grid-area: connected-users;
     background-color: #7ECEFD;
     height: 30vh;
     overflow-y: auto;
@@ -100,50 +52,26 @@ html {
 #connected-users-list,
 #all-users-list,
 #last-posts-list {
-    display: flex;
-    flex-flow: row wrap;
-    list-style: none;
     padding: 0;
     margin: 0;
-    justify-content: space-around;
 }
 
-.post-card {
-    display: grid;
-    grid-template-areas:
-        "post-card-user       .                 .                "
-        "post-card-user-photo .                 post-card-time   "
-        "post-card-user-photo .                 .                "
-        "post-card-title      post-card-title   post-card-title  "
-        "post-card-content    post-card-content post-card-content"
-        "post-card-content    post-card-content post-card-content";
-}
-
-.post-card-user {
-    grid-area: post-card-user;
-}
-
-.post-card-user-photo {
-    grid-area: post-card-user-photo;
-}
-
-.post-card-time {
-    grid-area: post-card-time;
-}
-
+.post-card-user,
 .post-card-title {
-    grid-area: post-card-title;
-    text-align: left !important;
+    line-height: 0;
 }
 
-.post-card-content {
-    grid-area: post-card-content;
+.post-card article {
+    padding: 0 10px;
 }
 
 #connected-users-list img,
 #all-users-list img,
-#last-posts-list img {
+#last-posts-list img,
+#user-info-panel img,
+.post-card-user-photo {
     height: 50px;
+    border-radius: 25px;
 }
 
 #connected-users-list li {
@@ -201,6 +129,15 @@ footer {
 .footer-container {
     grid-area: footer;
     text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer-container li {
+    padding: 0 10px;
 }
 
 #register-form {
@@ -246,21 +183,26 @@ footer {
 
 /* Unvisited link */
 #website-name a:link,
-.navigation a:link {
+.navigation a:link,
+.footer-container a:link,
+#user-info-panel a:link {
     color: #fff;
     text-decoration: none;
 }
 
 /* Visited link */
 #website-name a:visited,
-.navigation a:visited {
+.navigation a:visited,
+.footer-container a:visited,
+#user-info-panel a:visited {
     color: #fff;
     text-decoration: none;
 }
 
 /* Mouse over link */
 #website-name a:hover,
-.navigation a:hover {
+.footer-container a:hover,
+#user-info-panel a:hover {
     color: #FF7F66;
 }
 
@@ -270,7 +212,9 @@ footer {
 
 /* Selected link */
 #website-name a:active,
-.navigation a:active {
+.navigation a:active,
+.footer-container a:active,
+#user-info-panel a:active{
     color: #7ECEFD;
 }
 
@@ -291,6 +235,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/* Adjustments for a tablet display */
 @media (min-width: 768px) {
     .header-grid-container {
         grid-template-columns: 1fr 2fr 1fr;
@@ -300,14 +245,12 @@ body {
     .header-cover-grid-container {
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: auto;
-        grid-template-areas:
-            "website-banner website-name user-info-panel"
-            "navigation-panel navigation-panel navigation-panel";
+        grid-template-areas: "website-banner website-name user-info-panel" "navigation-panel navigation-panel navigation-panel";
     }
 
     .main-grid-container {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "showcase register-form";
+        grid-template-areas: "showcase register-form contact-information";
     }
 
     #all-users {
@@ -323,16 +266,25 @@ body {
     }
 
     .post-card {
-        width: 25%;
+        width: 45%;
+    }
+
+    .post-card article {
+        grid-template-areas:
+                "post-card-user       .                 .                 .                "
+                "post-card-user-photo .                 .                 post-card-time   "
+                "post-card-user-photo .                 .                 .                "
+                "post-card-title      post-card-title   post-card-title   post-card-title  "
+                "post-card-content    post-card-content post-card-content post-card-content"
+                "post-card-content    post-card-content post-card-content post-card-content";
     }
 }
 
+/* Adjustments for a small desktop screen */
 @media (min-width: 1024px) {
     .main-cover-grid-container {
-        grid-template-columns: 0.8fr 0.2fr;
-        grid-template-areas:
-                "all-users all-users"
-                "last-posts connected-users";
+        grid-template-columns: 0.75fr 0.25fr;
+        grid-template-areas: "all-users all-users" "last-posts connected-users";
     }
 
     #all-users {
@@ -352,12 +304,11 @@ body {
     }
 }
 
+/* Adjustments for high HD resolutions */
 @media (min-width: 1440px) {
     .main-cover-grid-container {
         grid-template-columns: 0.8fr 0.2fr;
-        grid-template-areas:
-                "all-users all-users"
-                "last-posts connected-users";
+        grid-template-areas: "all-users all-users" "last-posts connected-users";
     }
 
     #all-users {
@@ -373,115 +324,29 @@ body {
     }
 }
 
-/* Define the style for forms */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-label {
-    flex: 1;
-}
-
-input {
-    flex: 2;
-}
-
-[type=color],
-[type=date],
-[type=datetime],
-[type=datetime-local],
-[type=email],
-[type=month],
-[type=number],
-[type=password],
-[type=search],
-[type=tel],
-[type=text],
-[type=url],
-[type=week],
-[type=time],
-select,
-textarea {
-    padding: .25rem;
-    width: 70%;
-    border: 1px solid #cdcdcd;
-    border-radius: 4px;
-}
-
-label {
-    font-weight: bold;
-    margin: .25rem;
-}
-
-/* Define the style for buttons */
-.button,
-a.button,
-button,
-[type=reset],
-[type=submit],
-[type=button] {
-    background: #FF7F66;
-    border: 1px solid #FF7F66;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: .95rem;
-    font-family: 'Raleway', sans-serif;
-    padding: .5rem;
-    line-height: 1;
-    margin: .25rem 0;
-    border-radius: 4px;
-}
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
-.navigation {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-
-    list-style: none;
-    margin: 10px;
-    padding: 0;
-    align-items: center;
-}
-
-.navigation a {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    line-height: 2.5;
-
-    margin: .5rem;
-    padding: .5rem;
-    font-weight: 600;
-    background: #7ECEFD;
-    border: 1px solid #7ECEFD;
-    border-radius: 4px;
-}
-
-@media (min-width: 768px) {
-    .navigation {
-        flex-flow: row wrap;
-        justify-content: space-around;
+/* Small adjustment for 4K resolution */
+@media (min-width: 2560px) {
+    body {
+        max-width: 90%;
     }
 }
 
-@media (min-width: 1024px) {
-    .navigation {
-        flex-flow: row wrap;
-        justify-content: center;
-    }
+#contact-information-checkbox {
+    display: none;
+}
+
+#label-contact-information {
+    font-weight: normal;
+}
+
+#contact-information {
+    display: none;
+}
+
+#contact-information-checkbox:checked ~ #register-form {
+    display: none;
+}
+
+#contact-information-checkbox:checked ~ #contact-information {
+    display: block;
 }
