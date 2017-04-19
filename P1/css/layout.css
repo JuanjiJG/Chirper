@@ -1,0 +1,327 @@
+/* The following properties define the layout of the webpage */
+/* It starts with a mobile-first design, laying out the elements in a single column */
+/* It uses CSS3 Grid, so it's necessary to define the areas, in this case with "grid-template-areas" */
+
+/* Main container of the webpage */
+.grid-container {
+    display: grid;
+    min-height: 100%;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+/* Container for the header with the login form */
+.header-grid-container {
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+    grid-template-areas:
+        "website-banner"
+        "website-name"
+        "login-form";
+}
+
+/* Container for the header with the user info panel */
+.header-cover-grid-container {
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+    grid-template-areas:
+        "website-banner"
+        "website-name"
+        "user-info-panel"
+        "navigation-panel";
+}
+
+/* Container for the initial webpage */
+.main-grid-container {
+    display: grid;
+    grid-template-areas:
+        "showcase"
+        "register-form";
+}
+
+/* Container for the cover section */
+.main-cover-grid-container {
+    display: grid;
+    grid-template-areas:
+        "all-users"
+        "last-posts"
+        "connected-users";
+}
+
+/* A post card is also a grid container, to easily lay out its components */
+.post-card article {
+    display: grid;
+    grid-template-areas:
+            "post-card-user"
+            "post-card-user-photo"
+            "post-card-title"
+            "post-card-time"
+            "post-card-content";
+}
+
+/* The following properties are required by CSS3 Grid
+   in order to lay out the elements of the webpage */
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+header {
+    grid-area: header;
+}
+
+#all-users {
+    grid-area: all-users;
+}
+
+#last-posts {
+    grid-area: last-posts;
+}
+
+#connected-users {
+    grid-area: connected-users;
+}
+
+#navigation-panel {
+    grid-area: navigation-panel;
+}
+
+#login-form {
+    grid-area: login-form;
+}
+
+#register-form {
+    grid-area: register-form;
+}
+
+#showcase {
+    grid-area: showcase;
+}
+
+#user-info-panel {
+    grid-area: user-info-panel;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#website-banner {
+    grid-area: website-banner;
+    justify-self: center;
+}
+
+#website-name {
+    grid-area: website-name;
+    justify-self: center;
+}
+
+.post-card-user {
+    grid-area: post-card-user;
+    justify-self: center;
+}
+
+.post-card-user-photo {
+    grid-area: post-card-user-photo;
+    justify-self: center;
+}
+
+.post-card-time {
+    grid-area: post-card-time;
+    justify-self: right;
+}
+
+.post-card-title {
+    grid-area: post-card-title;
+    text-align: left !important;
+    justify-self: center;
+}
+
+.post-card-content {
+    grid-area: post-card-content;
+}
+
+/* The footer links are laid out using CSS3 Flexbox */
+.footer-container {
+    grid-area: footer;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/* The list of users and posts are laid out with CSS3 Flexbox */
+#connected-users-list,
+#all-users-list,
+#last-posts-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/* Structure of forms, using CSS3 Flexbox */
+/* The forms' elements are laid out in a column mode */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* The label is always the first shown element */
+label {
+    flex: 1;
+}
+
+/* The input is always the second shown element */
+input {
+    flex: 2;
+}
+
+/* Structure of navigation class, using CSS3 Flexbox */
+/* Based on a mobile-first approach, the navigation buttons
+   are laid out in a column mode when visiting the website on a mobile device */
+.navigation {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+}
+
+/* Adjustments for a tablet display */
+@media (min-width: 768px) {
+    /* In order to get a better responsive design, change the layout and height of some elements based on the viewport size */
+    .header-grid-container {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+            "website-banner website-name login-form";
+    }
+
+    .header-cover-grid-container {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "website-banner website-name user-info-panel"
+            "navigation-panel navigation-panel navigation-panel";
+    }
+
+    .main-grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "showcase register-form";
+    }
+
+    #all-users {
+        height: 30vh;
+    }
+
+    #connected-users {
+        height: 30vh;
+    }
+
+    #last-posts {
+        height: 60vh;
+    }
+
+    .post-card {
+        width: 45%;
+    }
+
+    /* Change the layout of the post card */
+    .post-card article {
+        grid-template-areas:
+            "post-card-user       .                 .                 .                "
+            "post-card-user-photo .                 .                 post-card-time   "
+            "post-card-user-photo .                 .                 .                "
+            "post-card-title      post-card-title   post-card-title   post-card-title  "
+            "post-card-content    post-card-content post-card-content post-card-content"
+            "post-card-content    post-card-content post-card-content post-card-content";
+    }
+}
+
+/* Adjustments for a small desktop screen */
+@media (min-width: 1024px) {
+    .main-cover-grid-container {
+        grid-template-columns: 0.75fr 0.25fr;
+        grid-template-areas:
+            "all-users all-users"
+            "last-posts connected-users";
+    }
+
+    .main-grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "showcase register-form";
+    }
+
+    #all-users {
+        height: 30vh;
+    }
+
+    #connected-users {
+        height: 60vh;
+    }
+
+    #last-posts {
+        height: 60vh;
+    }
+
+    .post-card {
+        width: 30%;
+    }
+}
+
+/* Adjustments for high HD resolutions */
+@media (min-width: 1440px) {
+    .main-cover-grid-container {
+        grid-template-columns: 0.8fr 0.2fr;
+        grid-template-areas:
+            "all-users all-users"
+            "last-posts connected-users";
+    }
+
+    #all-users {
+        height: 20vh;
+    }
+
+    #connected-users {
+        height: 70vh;
+    }
+
+    #last-posts {
+        height: 70vh;
+    }
+}
+
+/* Small adjustment for 4K resolution */
+@media (min-width: 2560px) {
+    body {
+        max-width: 90%;
+    }
+}
+
+/* When visiting the website using a tablet,
+   display navigation buttons using all the width of the screen */
+@media (min-width: 768px) {
+    .navigation {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+}
+
+/* When visiting the website using a desktop screen,
+   display navigation buttons at the center of the screen in a row mode */
+@media (min-width: 1024px) {
+    .navigation {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}

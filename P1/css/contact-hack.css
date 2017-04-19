@@ -1,0 +1,28 @@
+/* Stylesheet with the tweak for the contact information section */
+
+/* Hide the checkbox */
+#contact-information-checkbox {
+    display: none;
+}
+
+#label-contact-information {
+    font-weight: normal;
+}
+
+/* Basic style for the contact information */
+/* By default, the contact information is hided */
+#contact-information {
+    display: none;
+    padding: 10px;
+    text-align: center;
+}
+
+/* When the label is pressed, hide the register form */
+#contact-information-checkbox:checked ~ #register-form {
+    display: none;
+}
+
+/* When the label is pressed, show the contact information */
+#contact-information-checkbox:checked ~ #contact-information {
+    display: block;
+}

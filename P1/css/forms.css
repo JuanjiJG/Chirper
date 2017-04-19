@@ -1,4 +1,6 @@
-/* Section for the style of forms */
+/* Stylesheet for the style of forms */
+
+/* Style for all the inputs, select and textarea */
 [type=color],
 [type=date],
 [type=datetime],
@@ -21,6 +23,7 @@ textarea {
     border-radius: 4px;
 }
 
+/* Style for labels */
 label {
     font-weight: bold;
     margin: .25rem;
@@ -52,25 +55,4 @@ button::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
     border: 0;
     padding: 0;
-}
-
-/* Section for the style of navigation class */
-.navigation {
-    list-style: none;
-    margin: 10px;
-    padding: 0;
-    align-items: center;
-}
-
-.navigation a {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    line-height: 2.5;
-    margin: .5rem;
-    padding: .5rem;
-    font-weight: 600;
-    background: #7ECEFD;
-    border: 1px solid #7ECEFD;
-    border-radius: 4px;
 }
