@@ -53,11 +53,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="steve_20170420_1430.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="steve_20170420_1430.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/steve/steve_20170420_1430.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="326">
               <caret line="287" column="52" lean-forward="false" selection-start-line="287" selection-start-column="52" selection-end-line="287" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/forms.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -141,7 +151,6 @@
         <option value="$PROJECT_DIR$/john/john-biografia.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/layout.css" />
-        <option value="$PROJECT_DIR$/css/forms.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/portada.html" />
         <option value="$PROJECT_DIR$/john/john.html" />
@@ -174,6 +183,7 @@
         <option value="$PROJECT_DIR$/steve/steve-informacion.html" />
         <option value="$PROJECT_DIR$/steve/steve_20170305_1850.html" />
         <option value="$PROJECT_DIR$/steve/steve_20170420_1430.html" />
+        <option value="$PROJECT_DIR$/css/forms.css" />
       </list>
     </option>
   </component>
@@ -229,7 +239,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="steve" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -771,7 +781,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180642000" />
+    <option name="totallyTimeSpent" value="181251000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -953,13 +963,6 @@
         <state relative-caret-position="332">
           <caret line="180" column="27" lean-forward="false" selection-start-line="180" selection-start-column="27" selection-end-line="180" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/forms.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1215,6 +1218,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="287" column="52" lean-forward="false" selection-start-line="287" selection-start-column="52" selection-end-line="287" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/forms.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding />
         </state>
       </provider>
