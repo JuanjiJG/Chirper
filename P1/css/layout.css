@@ -178,6 +178,7 @@ header {
 #new-post-user-image {
     grid-area: new-post-user-image;
     justify-self: center;
+    align-self: flex-start;
 }
 
 #new-post-form {

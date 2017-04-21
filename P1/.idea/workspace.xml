@@ -12,7 +12,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -24,7 +24,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>footer</find>
       <find>footer-</find>
       <find>all-users</find>
       <find>post-card-con</find>
@@ -54,6 +53,7 @@
       <find>mary</find>
       <find>Mike</find>
       <find>mike</find>
+      <find>new-post-user-image</find>
     </findStrings>
     <replaceStrings>
       <replace>flex-container</replace>
@@ -91,9 +91,7 @@
         <option value="$PROJECT_DIR$/john/john-biografia.html" />
         <option value="$PROJECT_DIR$/john/john-informacion.html" />
         <option value="$PROJECT_DIR$/john/john-fotos.html" />
-        <option value="$PROJECT_DIR$/css/forms.css" />
         <option value="$PROJECT_DIR$/john/john_20170305_1850.html" />
-        <option value="$PROJECT_DIR$/css/layout.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/john/john.html" />
         <option value="$PROJECT_DIR$/john/john_20170420_1430.html" />
@@ -123,6 +121,8 @@
         <option value="$PROJECT_DIR$/steve/steve_20170305_1850.html" />
         <option value="$PROJECT_DIR$/steve/steve_20170420_1430.html" />
         <option value="$PROJECT_DIR$/portada.html" />
+        <option value="$PROJECT_DIR$/css/layout.css" />
+        <option value="$PROJECT_DIR$/css/forms.css" />
       </list>
     </option>
   </component>
@@ -137,8 +137,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1366" />
-    <option name="height" value="720" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -155,7 +157,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -170,8 +172,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -537,44 +539,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -631,25 +595,6 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
     </list>
@@ -701,11 +646,12 @@
       <workItem from="1492689164084" duration="1546000" />
       <workItem from="1492699459700" duration="3742000" />
       <workItem from="1492757788570" duration="33415000" />
+      <workItem from="1492803688547" duration="1073000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178712000" />
+    <option name="totallyTimeSpent" value="179785000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -717,7 +663,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="720" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -733,14 +679,14 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14772727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14925373" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41107383" sideWeight="0.49562362" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41061756" sideWeight="0.49562362" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -839,34 +785,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/martha.html" />
-    <entry file="file://$PROJECT_DIR$/john/john.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/john/john.jpg" />
     <entry file="file://$PROJECT_DIR$/css/responsive.css" />
     <entry file="file://$PROJECT_DIR$/css/old-style.css" />
     <entry file="file://$PROJECT_DIR$/css/flexbox.css" />
-    <entry file="file://$PROJECT_DIR$/css/contact-hack.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/css/contact-hack.css" />
     <entry file="file://$PROJECT_DIR$/css/normalize.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5650">
           <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/forms.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,23 +801,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="470">
           <caret line="380" column="24" lean-forward="false" selection-start-line="380" selection-start-column="24" selection-end-line="380" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/layout.css">
+    <entry file="file://$PROJECT_DIR$/css/paginator.css" />
+    <entry file="file://$PROJECT_DIR$/john/john_20170420_1430.html" />
+    <entry file="file://$PROJECT_DIR$/john/john-fotos.html" />
+    <entry file="file://$PROJECT_DIR$/john/john-informacion.html" />
+    <entry file="file://$PROJECT_DIR$/kate/kate_20170420_1430.html" />
+    <entry file="file://$PROJECT_DIR$/kate/kate_20170305_1850.html" />
+    <entry file="file://$PROJECT_DIR$/kate/kate.html" />
+    <entry file="file://$PROJECT_DIR$/kate/kate-informacion.html" />
+    <entry file="file://$PROJECT_DIR$/kate/kate-fotos.html" />
+    <entry file="file://$PROJECT_DIR$/martha/martha.html" />
+    <entry file="file://$PROJECT_DIR$/martha/martha-fotos.html" />
+    <entry file="file://$PROJECT_DIR$/martha/martha_20170305_1850.html" />
+    <entry file="file://$PROJECT_DIR$/martha/martha_20170420_1430.html" />
+    <entry file="file://$PROJECT_DIR$/martha/martha-informacion.html" />
+    <entry file="file://$PROJECT_DIR$/mary/mary.html" />
+    <entry file="file://$PROJECT_DIR$/mary/mary-fotos.html" />
+    <entry file="file://$PROJECT_DIR$/mary/mary-informacion.html" />
+    <entry file="file://$PROJECT_DIR$/mary/mary_20170305_1850.html" />
+    <entry file="file://$PROJECT_DIR$/mary/mary_20170420_1430.html" />
+    <entry file="file://$PROJECT_DIR$/mike/mike_20170420_1430.html" />
+    <entry file="file://$PROJECT_DIR$/mike/mike_20170305_1850.html" />
+    <entry file="file://$PROJECT_DIR$/mike/mike-informacion.html" />
+    <entry file="file://$PROJECT_DIR$/mike/mike-fotos.html" />
+    <entry file="file://$PROJECT_DIR$/mike/mike.html" />
+    <entry file="file://$PROJECT_DIR$/steve/steve.html" />
+    <entry file="file://$PROJECT_DIR$/steve/steve-fotos.html" />
+    <entry file="file://$PROJECT_DIR$/steve/steve-informacion.html" />
+    <entry file="file://$PROJECT_DIR$/steve/steve_20170305_1850.html" />
+    <entry file="file://$PROJECT_DIR$/steve/steve_20170420_1430.html" />
+    <entry file="file://$PROJECT_DIR$/portada.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/paginator.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="254">
+          <caret line="189" column="25" lean-forward="false" selection-start-line="189" selection-start-column="25" selection-end-line="189" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -902,306 +848,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/john/john_20170420_1430.html">
+    <entry file="file://$PROJECT_DIR$/john/john_20170305_1850.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1204">
-          <caret line="201" column="40" lean-forward="false" selection-start-line="201" selection-start-column="40" selection-end-line="201" selection-end-column="40" />
+        <state relative-caret-position="-3315">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/john/john-fotos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="177" column="40" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
-          <folding>
-            <element signature="e#7549#7556#1" expanded="true" />
-            <element signature="e#7766#7773#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/john/john.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="237" column="25" lean-forward="true" selection-start-line="237" selection-start-column="25" selection-end-line="237" selection-end-column="25" />
-          <folding>
-            <element signature="e#7558#7566#0" expanded="true" />
-            <element signature="e#8189#8197#0" expanded="true" />
-            <element signature="e#8834#8842#0" expanded="true" />
-            <element signature="e#9465#9473#0" expanded="true" />
-            <element signature="e#10110#10118#0" expanded="true" />
-            <element signature="e#10741#10749#0" expanded="true" />
-            <element signature="e#10878#10885#1" expanded="true" />
-            <element signature="e#11095#11102#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/john/john-informacion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="58" column="79" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="79" />
+        <state relative-caret-position="-289">
+          <caret line="115" column="23" lean-forward="true" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kate/kate_20170420_1430.html">
+    <entry file="file://$PROJECT_DIR$/css/layout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="206" column="32" lean-forward="false" selection-start-line="206" selection-start-column="32" selection-end-line="206" selection-end-column="32" />
+        <state relative-caret-position="332">
+          <caret line="180" column="27" lean-forward="false" selection-start-line="180" selection-start-column="27" selection-end-line="180" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kate/kate_20170305_1850.html">
+    <entry file="file://$PROJECT_DIR$/css/forms.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="212" column="51" lean-forward="false" selection-start-line="212" selection-start-column="51" selection-end-line="212" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kate/kate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="165" column="43" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
-          <folding>
-            <element signature="e#6947#6955#0" expanded="true" />
-            <element signature="e#7594#7602#0" expanded="true" />
-            <element signature="e#7731#7738#1" expanded="true" />
-            <element signature="e#7948#7955#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kate/kate-informacion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="44" column="44" lean-forward="false" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kate/kate-fotos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
-          <folding>
-            <element signature="e#7660#7667#1" expanded="true" />
-            <element signature="e#7877#7884#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/martha/martha.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="82" column="71" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
-          <folding>
-            <element signature="e#7007#7015#0" expanded="true" />
-            <element signature="e#7666#7674#0" expanded="true" />
-            <element signature="e#7803#7810#1" expanded="true" />
-            <element signature="e#8020#8027#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/martha/martha-fotos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="80" column="42" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
-          <folding>
-            <element signature="e#7732#7739#1" expanded="true" />
-            <element signature="e#7949#7956#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/martha/martha_20170305_1850.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/martha/martha_20170420_1430.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="80" column="26" lean-forward="false" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/martha/martha-informacion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="56" column="26" lean-forward="false" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mary/mary.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="65" column="48" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
-          <folding>
-            <element signature="e#6979#6987#0" expanded="true" />
-            <element signature="e#7626#7634#0" expanded="true" />
-            <element signature="e#7763#7770#1" expanded="true" />
-            <element signature="e#7980#7987#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mary/mary-fotos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="95" column="28" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
-          <folding>
-            <element signature="e#7704#7711#1" expanded="true" />
-            <element signature="e#7921#7928#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mary/mary-informacion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mary/mary_20170305_1850.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="126" column="68" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mary/mary_20170420_1430.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2286">
-          <caret line="148" column="34" lean-forward="false" selection-start-line="148" selection-start-column="34" selection-end-line="148" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mike/mike_20170420_1430.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="243" column="13" lean-forward="true" selection-start-line="243" selection-start-column="13" selection-end-line="243" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mike/mike_20170305_1850.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="265" column="45" lean-forward="true" selection-start-line="265" selection-start-column="45" selection-end-line="265" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mike/mike-informacion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="55" column="28" lean-forward="false" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mike/mike-fotos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="61" column="20" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
-          <folding>
-            <element signature="e#7692#7699#1" expanded="true" />
-            <element signature="e#7909#7916#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mike/mike.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-          <folding>
-            <element signature="e#6979#6987#0" expanded="true" />
-            <element signature="e#7626#7634#0" expanded="true" />
-            <element signature="e#7763#7770#1" expanded="true" />
-            <element signature="e#7980#7987#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/steve/steve.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="245" column="71" lean-forward="false" selection-start-line="245" selection-start-column="67" selection-end-line="245" selection-end-column="71" />
-          <folding>
-            <element signature="e#6993#7001#0" expanded="true" />
-            <element signature="e#7646#7654#0" expanded="true" />
-            <element signature="e#7783#7790#1" expanded="true" />
-            <element signature="e#8000#8007#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/steve/steve-fotos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="235" column="26" lean-forward="false" selection-start-line="235" selection-start-column="26" selection-end-line="235" selection-end-column="26" />
-          <folding>
-            <element signature="e#7712#7719#1" expanded="true" />
-            <element signature="e#7929#7936#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/steve/steve-informacion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="64" column="18" lean-forward="false" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/steve/steve_20170305_1850.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2699">
-          <caret line="245" column="42" lean-forward="false" selection-start-line="245" selection-start-column="38" selection-end-line="245" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/steve/steve_20170420_1430.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="183" column="46" lean-forward="false" selection-start-line="183" selection-start-column="46" selection-end-line="183" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portada.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="189" column="25" lean-forward="false" selection-start-line="189" selection-start-column="25" selection-end-line="189" selection-end-column="25" />
-          <folding>
-            <element signature="e#7331#7339#0" expanded="true" />
-            <element signature="e#8670#8678#0" expanded="true" />
-            <element signature="e#10003#10011#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/john/john_20170305_1850.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="145" column="14" lean-forward="true" selection-start-line="145" selection-start-column="14" selection-end-line="145" selection-end-column="14" />
+        <state relative-caret-position="391">
+          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           <folding />
         </state>
       </provider>
