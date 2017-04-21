@@ -3,7 +3,7 @@
 <head>
   <!-- Basic page information -->
   <meta charset="UTF-8">
-  <title>Biografía de Steve - Chirper</title>
+  <title>Vacaciones en Irlanda - Chirper</title>
   <!-- Meta tag for the latest Internet Explorer rendering mode -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Meta tag for responsive web design -->
@@ -40,15 +40,15 @@
     </section>
     <nav id="navigation-panel">
       <ul class="navigation">
-        <li><a class="active" href="../steve/steve.html">Biografía</a></li>
-        <li><a href="../steve/steve-fotos.html">Fotos</a></li>
-        <li><a href="../steve/steve-informacion.html">Información</a></li>
+        <li><a href="../mike/mike.html">Biografía</a></li>
+        <li><a href="../mike/mike-fotos.html">Fotos</a></li>
+        <li><a href="../mike/mike-informacion.html">Información</a></li>
       </ul>
     </nav>
   </section>
 </header>
 <main>
-  <section class="main-active-bio">
+  <section class="main-post-container">
     <section id="all-users">
       <h3>Todos los usuarios</h3>
       <ul id="all-users-list">
@@ -144,48 +144,75 @@
         </li>
       </ul>
     </section>
-    <section id="user-last-posts">
-      <h3>Publicaciones de Steve</h3>
-      <ul id="last-posts-list">
-        <li class="post-card">
-          <article>
-            <h4 class="post-card-user">Steve</h4>
-            <img class="post-card-user-photo" src="../steve/steve.jpg"
-                 alt="Imagen del usuario Steve">
-            <p class="post-card-time">Hace 10 horas</p>
-            <h3 class="post-card-title"><a href="../steve/steve_20170420_1430.html">Vacaciones
-              en Irlanda</a></h3>
-            <p class="post-card-content">
-              La semana pasada fui de viaje a Irlanda, y quedé maravilado por
-              sus preciosos paisajes.
-              ¡Visité montones de sitios e hice muchas &hellip;</p>
-          </article>
-        </li>
-        <li class="post-card">
-          <article>
-            <h4 class="post-card-user">Steve</h4>
-            <img class="post-card-user-photo" src="../steve/steve.jpg"
-                 alt="Imagen del usuario Steve">
-            <p class="post-card-time">5 de marzo</p>
-            <h3 class="post-card-title"><a href="../steve/steve_20170305_1850.html">¿Qué
-              es Lorem Ipsum?</a></h3>
-            <p class="post-card-content">
-              Lorem ipsum es el texto que se usa habitualmente en diseño
-              gráfico en demostraciones de tipografías o de borradores de
-              &hellip;</p>
-          </article>
-        </li>
-      </ul>
-      <nav id="last-post-pagination">
-        <ul>
-          <li><a href="#">&laquo;</a></li>
-          <li><a href="#" class="pagination-active">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">&raquo;</a></li>
+    <section id="post-detail-section">
+      <article id="post-section">
+        <h4 class="post-user">Mike</h4>
+        <img class="post-user-photo" src="../mike/mike.jpg"
+             alt="Imagen del usuario Mike">
+        <p class="post-time">Hace 10 horas</p>
+        <h3 class="post-title">Vacaciones en Irlanda</h3>
+        <section class="post-content">
+          <p>La semana pasada fui de viaje a Irlanda, y quedé maravilado por
+            sus preciosos paisajes.
+            ¡Visité montones de sitios e hice muchas fotos! Aquí os dejo una de
+            mis favoritas. Sin duda os recomiendo ir en cuanto podáis.</p>
+          <p>La semana pasada fui de viaje a Irlanda, y quedé maravilado por
+            sus preciosos paisajes.
+            ¡Visité montones de sitios e hice muchas fotos! Aquí os dejo una de
+            mis favoritas. Sin duda os recomiendo ir en cuanto podáis.</p>
+          <p>La semana pasada fui de viaje a Irlanda, y quedé maravilado por
+            sus preciosos paisajes.
+            ¡Visité montones de sitios e hice muchas fotos! Aquí os dejo una de
+            mis favoritas. Sin duda os recomiendo ir en cuanto podáis.</p>
+        </section>
+        <img class="post-image" src="../mike/mike_20170420_1430.jpg"
+             alt="Fotografía de la entrada">
+      </article>
+      <section id="comments-section">
+        <h3>Comentarios</h3>
+        <ul class="comments-list">
+          <li>
+            <img src="../john/john.jpg" alt="Imagen del usuario John"
+                 class="comment-user-image">
+            <h4 class="comment-user-name">John</h4>
+            <h4 class="comment-time">Hace 2 horas</h4>
+            <p class="comment-text">¡Me alegro de que lo disfrutaras!</p>
+          </li>
+          <li>
+            <img src="../steve/steve.jpg" alt="Imagen del usuario Steve"
+                 class="comment-user-image">
+            <h4 class="comment-user-name">Steve</h4>
+            <h4 class="comment-time">Hace 1 hora</h4>
+            <p class="comment-text">¡Ya podrías haberme invitado! ;)</p>
+          </li>
+          <li>
+            <img src="../kate/kate.jpg" alt="Imagen del usuario Kate"
+                 class="comment-user-image">
+            <h4 class="comment-user-name">Kate</h4>
+            <h4 class="comment-time">Hace 2 horas</h4>
+            <p class="comment-text">Yo estuve el año pasado y concuerdo contigo
+              en absolutamente todo. Es un pais precioso.</p>
+          </li>
+          <li>
+            <img src="../mike/mike.jpg" alt="Imagen del usuario Mike"
+                 class="comment-user-image">
+            <h4 class="comment-user-name">Mike</h4>
+            <h4 class="comment-time">Hace 10 minutos</h4>
+            <p class="comment-text">¿Soy el único que se ha dado cuenta de que
+              el texto está repetido? :O</p>
+          </li>
         </ul>
-      </nav>
+      </section>
+      <section id="new-post-section">
+        <h2 id="new-post-user">John</h2>
+        <img id="new-post-user-image" src="../john/john.jpg"
+             alt="Imagen del usuario John">
+        <form id="new-post-form" name="new-post-form" action="#" method="post">
+          <label for="new-post-content">Escribe un comentario</label>
+          <textarea id="new-post-content" required="required"></textarea>
+          <input type="submit" name="submit" value="Publicar comentario">
+        </form>
+      </section>
     </section>
     <aside id="connected-users">
       <h3>Usuarios conectados</h3>
