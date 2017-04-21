@@ -23,6 +23,19 @@ textarea {
     border-radius: 4px;
 }
 
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+#new-post-section input, select, textarea {
+    width: 90%;
+}
+
+#new-post-section input[type=submit], input[type=file] {
+    width: auto;
+}
+
 /* Style for labels */
 label {
     font-weight: bold;
@@ -33,6 +46,7 @@ label {
 .button,
 a.button,
 button,
+[type=file],
 [type=reset],
 [type=submit],
 [type=button] {
@@ -47,6 +61,10 @@ button,
     line-height: 1;
     margin: .25rem 0;
     border-radius: 4px;
+}
+
+[type=file] {
+    width: 70%;
 }
 
 /* Small tweaks for Mozilla Firefox users */

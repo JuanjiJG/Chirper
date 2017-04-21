@@ -3,7 +3,7 @@
 <head>
   <!-- Basic page information -->
   <meta charset="UTF-8">
-  <title>Galería de fotografías - Chirper</title>
+  <title>Biografía - Chirper</title>
   <!-- Meta tag for the latest Internet Explorer rendering mode -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Meta tag for responsive web design -->
@@ -40,15 +40,15 @@
     </section>
     <nav id="navigation-panel">
       <ul class="navigation">
-        <li><a href="john.html">Biografía</a></li>
-        <li><a class="active" href="john-fotos.html">Fotos</a></li>
+        <li><a class="active" href="john.html">Biografía</a></li>
+        <li><a href="john-fotos.html">Fotos</a></li>
         <li><a href="john-informacion.html">Información</a></li>
       </ul>
     </nav>
   </section>
 </header>
 <main>
-  <section class="main-cover-grid-container">
+  <section class="main-active-bio">
     <section id="all-users">
       <h3>Todos los usuarios</h3>
       <ul id="all-users-list">
@@ -144,26 +144,100 @@
         </li>
       </ul>
     </section>
-    <section id="last-posts">
-      <h3>Fotos de John</h3>
-      <ul id="photos-list">
+    <section id="user-last-posts">
+      <h3>Publicaciones de John</h3>
+      <section id="new-post-section">
+        <h2 id="new-post-user">John</h2>
+        <img id="new-post-user-image" src="john.jpg"
+             alt="Imagen del usuario John">
+        <form id="new-post-form" name="new-post-form" action="#" method="post">
+          <label for="new-post-title">Título de la entrada</label>
+          <input id="new-post-title" type="text" required="required">
+          <label for="new-post-content">Texto de la entrada</label>
+          <textarea id="new-post-content" required="required"></textarea>
+          <label>¡Añade una imagen!</label>
+          <input type="file" name="new-post-photo" accept="image/jpeg">
+          <input type="submit" name="submit" value="Publicar entrada">
+        </form>
+      </section>
+      <ul id="last-posts-list">
         <li class="post-card">
-          <a href="john_20170420_1430.html"><img src="john_20170420_1430.jpg"></a>
+          <article>
+            <h4 class="post-card-user">John</h4>
+            <img class="post-card-user-photo" src="john.jpg"
+                 alt="Imagen del usuario John">
+            <p class="post-card-time">Hace 10 horas</p>
+            <h3 class="post-card-title"><a href="john_20170420_1430.html">Vacaciones
+              en Irlanda</a></h3>
+            <p class="post-card-content">
+              La semana pasada fui de viaje a Irlanda, y quedé maravilado por
+              sus preciosos paisajes.
+              ¡Visité montones de sitios e hice muchas &hellip;</p>
+          </article>
         </li>
         <li class="post-card">
-          <a href="john_20170305_1850.html"><img src="john_20170305_1850.jpg"></a>
+          <article>
+            <h4 class="post-card-user">John</h4>
+            <img class="post-card-user-photo" src="john.jpg"
+                 alt="Imagen del usuario John">
+            <p class="post-card-time">5 de marzo</p>
+            <h3 class="post-card-title"><a href="john_20170305_1850.html.html">¿Qué es Lorem Ipsum?</a></h3>
+            <p class="post-card-content">
+              Lorem ipsum es el texto que se usa habitualmente en diseño
+              gráfico en demostraciones de tipografías o de borradores de &hellip;</p>
+          </article>
         </li>
         <li class="post-card">
-          <a href="john_20170420_1430.html"><img src="john_20170420_1430.jpg"></a>
+          <article>
+            <h4 class="post-card-user">John</h4>
+            <img class="post-card-user-photo" src="john.jpg"
+                 alt="Imagen del usuario John">
+            <p class="post-card-time">Hace 10 horas</p>
+            <h3 class="post-card-title"><a href="john_20170420_1430.html">Vacaciones
+              en Irlanda</a></h3>
+            <p class="post-card-content">
+              La semana pasada fui de viaje a Irlanda, y quedé maravilado por
+              sus preciosos paisajes.
+              ¡Visité montones de sitios e hice muchas &hellip;</p>
+          </article>
         </li>
         <li class="post-card">
-          <a href="john_20170305_1850.html"><img src="john_20170305_1850.jpg"></a>
+          <article>
+            <h4 class="post-card-user">John</h4>
+            <img class="post-card-user-photo" src="john.jpg"
+                 alt="Imagen del usuario John">
+            <p class="post-card-time">5 de marzo</p>
+            <h3 class="post-card-title"><a href="john_20170305_1850.html.html">¿Qué es Lorem Ipsum?</a></h3>
+            <p class="post-card-content">
+              Lorem ipsum es el texto que se usa habitualmente en diseño
+              gráfico en demostraciones de tipografías o de borradores de &hellip;</p>
+          </article>
         </li>
         <li class="post-card">
-          <a href="john_20170420_1430.html"><img src="john_20170420_1430.jpg"></a>
+          <article>
+            <h4 class="post-card-user">John</h4>
+            <img class="post-card-user-photo" src="john.jpg"
+                 alt="Imagen del usuario John">
+            <p class="post-card-time">Hace 10 horas</p>
+            <h3 class="post-card-title"><a href="john_20170420_1430.html">Vacaciones
+              en Irlanda</a></h3>
+            <p class="post-card-content">
+              La semana pasada fui de viaje a Irlanda, y quedé maravilado por
+              sus preciosos paisajes.
+              ¡Visité montones de sitios e hice muchas &hellip;</p>
+          </article>
         </li>
         <li class="post-card">
-          <a href="john_20170305_1850.html"><img src="john_20170305_1850.jpg"></a>
+          <article>
+            <h4 class="post-card-user">John</h4>
+            <img class="post-card-user-photo" src="john.jpg"
+                 alt="Imagen del usuario John">
+            <p class="post-card-time">5 de marzo</p>
+            <h3 class="post-card-title"><a href="john_20170305_1850.html.html">¿Qué es Lorem Ipsum?</a></h3>
+            <p class="post-card-content">
+              Lorem ipsum es el texto que se usa habitualmente en diseño
+              gráfico en demostraciones de tipografías o de borradores de &hellip;</p>
+          </article>
         </li>
       </ul>
       <nav id="last-post-pagination">

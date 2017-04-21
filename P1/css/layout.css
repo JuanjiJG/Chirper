@@ -53,6 +53,16 @@
         "connected-users";
 }
 
+/* Container for the active bio section */
+/* This container is necessary because of the new post form */
+.main-active-bio {
+    display: grid;
+    grid-template-areas:
+        "all-users"
+        "user-last-posts"
+        "connected-users";
+}
+
 /* A post card is also a grid container, to easily lay out its components */
 .post-card article {
     display: grid;
@@ -88,6 +98,33 @@ header {
 
 #connected-users {
     grid-area: connected-users;
+}
+
+#user-last-posts {
+    grid-area: user-last-posts;
+}
+
+#new-post-section {
+    display: grid;
+    grid-template-areas:
+        "new-post-user"
+        "new-post-user-image"
+        "new-post-form";
+}
+
+#new-post-user {
+    grid-area: new-post-user;
+    justify-self: center;
+    align-self: flex-end;
+}
+
+#new-post-user-image {
+    grid-area: new-post-user-image;
+    justify-self: center;
+}
+
+#new-post-form {
+    grid-area: new-post-form;
 }
 
 #navigation-panel {
@@ -156,13 +193,18 @@ header {
     justify-content: center;
 }
 
-/* The list of users and posts are laid out with CSS3 Flexbox */
+/* The list of users, photos and posts are laid out with CSS3 Flexbox */
 #connected-users-list,
 #all-users-list,
-#last-posts-list {
+#last-posts-list,
+#photos-list {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+}
+
+#photos-list {
+    align-items: center;
 }
 
 /* The user box itself is a flexbox in a column mode */
@@ -235,8 +277,9 @@ input {
         height: 30vh;
     }
 
-    #last-posts {
-        height: 60vh;
+    #last-posts,
+    #user-last-posts {
+        height: 80vh;
     }
 
     .post-card {
@@ -247,11 +290,20 @@ input {
     .post-card article {
         grid-template-areas:
             "post-card-user       .                 .                 .                "
-            "post-card-user-photo .                 .                 post-card-time   "
+            "post-card-user-photo .                 post-card-time    post-card-time   "
             "post-card-user-photo .                 .                 .                "
-            "post-card-title      post-card-title   post-card-title   post-card-title  "
+            "post-card-title      post-card-title   post-card-title   .                "
             "post-card-content    post-card-content post-card-content post-card-content"
             "post-card-content    post-card-content post-card-content post-card-content";
+    }
+
+    /* Change the layout of the New Post section */
+    #new-post-section {
+        display: grid;
+        grid-template-columns: 0.2fr 0.8fr;
+        grid-template-areas:
+                "new-post-user new-post-form"
+                "new-post-user-image new-post-form";
     }
 }
 
@@ -262,6 +314,13 @@ input {
         grid-template-areas:
             "all-users all-users"
             "last-posts connected-users";
+    }
+
+    .main-active-bio {
+        grid-template-columns: 0.75fr 0.25fr;
+        grid-template-areas:
+            "all-users       all-users"
+            "user-last-posts connected-users";
     }
 
     .main-grid-container {
@@ -275,11 +334,12 @@ input {
     }
 
     #connected-users {
-        height: 60vh;
+        height: 80vh;
     }
 
-    #last-posts {
-        height: 60vh;
+    #last-posts,
+    #user-last-posts {
+        height: 80vh;
     }
 
     .post-card {
@@ -304,7 +364,8 @@ input {
         height: 70vh;
     }
 
-    #last-posts {
+    #last-posts,
+    #user-last-posts {
         height: 70vh;
     }
 }
@@ -333,3 +394,91 @@ input {
         justify-content: center;
     }
 }
+
+/* Section for the information page */
+/* This layout is for other users, not the active user */
+.profile-grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "profile-header"
+        "profile-image"
+        "profile-information";
+}
+
+/* This layout is for the active user, who has an edit profile form */
+.active-profile-grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+            "profile-header"
+            "active-profile-image"
+            "active-profile-form";
+}
+
+.profile-header {
+    grid-area: profile-header;
+    text-align: center;
+    align-self: center;
+}
+
+.profile-image {
+    grid-area: profile-image;
+    text-align: center;
+    align-self: center;
+}
+
+.active-profile-image {
+    grid-area: active-profile-image;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.profile-information {
+    grid-area: profile-information;
+    text-align: center;
+    align-self: center;
+}
+
+.active-profile-form {
+    grid-area: active-profile-form;
+    align-self: center;
+}
+
+/* When the screen is a tablet or bigger, change the layout */
+@media (min-width: 768px) {
+    .profile-grid-container {
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-areas:
+                ". profile-header profile-header      ."
+                ". profile-image  profile-information .";
+    }
+
+    .active-profile-grid-container {
+        grid-template-areas:
+                ". profile-header       profile-header      ."
+                ". active-profile-image active-profile-form .";
+    }
+
+    .profile-header {
+        justify-self: center;
+    }
+
+    .profile-image {
+        justify-self: right;
+    }
+
+    .profile-information {
+        justify-self: left;
+        text-align: left;
+    }
+
+    .active-profile-image {
+        justify-self: right;
+    }
+    .active-profile-form {
+        justify-self: left;
+    }
+}
+
