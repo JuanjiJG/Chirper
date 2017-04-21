@@ -58,7 +58,8 @@ footer ul {
 /* Style for the Last Posts section */
 /* Includes the User Last Posts section */
 #last-posts,
-#user-last-posts {
+#user-last-posts,
+#post-detail-section {
     height: 60vh;
     background-color: #FFF6E5;
     color: #3E454C;
@@ -79,7 +80,8 @@ footer ul {
     padding: 10px;
 }
 
-#connected-users h3 {
+#connected-users h3,
+#comments-section h3 {
     text-align: center;
 }
 
@@ -100,12 +102,29 @@ footer ul {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
+/* Style for the user image that appears with the new post/comment forms */
 #new-post-section img {
     height: auto;
     max-width: 50%;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 500px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.post-user-photo {
+    height: 100px;
+    border-radius: 500px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the image of a post detail */
+.post-image {
+    width: 80%;
+    height: auto;
+    margin: 10px;
+    border: 1px solid #3E454C;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 /* Style for the Photo Gallery section */
@@ -119,6 +138,14 @@ footer ul {
         height: auto;
         max-width: 75%;
         border-radius: 500px;
+    }
+
+    .post-image {
+        width: 50%;
+        height: auto;
+        margin: 10px;
+        border: 1px solid #3E454C;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -137,7 +164,10 @@ footer ul {
 
 /* Style for the list elements of Last Posts */
 #photos-list li,
-#last-posts-list li {
+#last-posts-list li,
+#post-section,
+#comments-section,
+#post-comment-section {
     padding: 5px;
     margin: 5px;
     min-width: 100px;
@@ -319,4 +349,34 @@ footer ul {
 .active-profile-form,
 .active-profile-image {
     padding: 10px;
+}
+
+/* Section for the style of the comments list */
+.comments-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Adjust the profile image of the comments */
+.comment-user-image {
+    height: 100px;
+    border-radius: 500px;
+    margin: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Define a style for every comment */
+.comments-list li {
+    padding: 5px;
+    margin: 5px;
+    min-width: 100px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: #7ECEFD;
+    box-sizing: border-box;
+}
+
+.comment-text {
+    text-align: justify;
 }

@@ -66,11 +66,3 @@ button,
 [type=file] {
     width: 70%;
 }
-
-/* Small tweaks for Mozilla Firefox users */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}

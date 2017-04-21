@@ -63,6 +63,16 @@
         "connected-users";
 }
 
+/* Container for the post detail section */
+/* This container is necessary because of the comments list and post comment panel */
+.main-post-container {
+    display: grid;
+    grid-template-areas:
+        "all-users"
+        "post-detail-section"
+        "connected-users";
+}
+
 /* A post card is also a grid container, to easily lay out its components */
 .post-card article {
     display: grid;
@@ -72,6 +82,49 @@
             "post-card-title"
             "post-card-time"
             "post-card-content";
+}
+
+/* Section for the Comments section and its list */
+.comments-list li {
+    display: grid;
+    grid-template-columns: 0.1fr 0.9fr;
+    grid-template-areas:
+        "comment-user-image comment-user-name "
+        "comment-user-image comment-time      "
+        "comment-text       comment-text      "
+        "comment-text       comment-text      ";
+}
+
+.comment-user-image {
+    grid-area: comment-user-image;
+    justify-self: right;
+    align-self: center;
+}
+
+.comment-text {
+    grid-area: comment-text;
+}
+
+.comment-user-name {
+    grid-area: comment-user-name;
+    justify-self: left;
+}
+
+.comment-time {
+    grid-area: comment-time;
+    justify-self: left;
+}
+
+/* Layout for the detailed view of a post */
+#post-detail-section article {
+    display: grid;
+    grid-template-areas:
+            "post-user"
+            "post-user-photo"
+            "post-title"
+            "post-time"
+            "post-content"
+            "post-image";
 }
 
 /* The following properties are required by CSS3 Grid
@@ -102,6 +155,10 @@ header {
 
 #user-last-posts {
     grid-area: user-last-posts;
+}
+
+#post-detail-section {
+    grid-area: post-detail-section;
 }
 
 #new-post-section {
@@ -165,14 +222,29 @@ header {
     justify-self: center;
 }
 
+.post-user {
+    grid-area: post-user;
+    justify-self: center;
+}
+
 .post-card-user-photo {
     grid-area: post-card-user-photo;
     justify-self: center;
 }
 
+.post-user-photo {
+    grid-area: post-user-photo;
+    justify-self: center;
+}
+
 .post-card-time {
     grid-area: post-card-time;
-    justify-self: right;
+    justify-self: center;
+}
+
+.post-time {
+    grid-area: post-time;
+    justify-self: center;
 }
 
 .post-card-title {
@@ -181,8 +253,23 @@ header {
     justify-self: center;
 }
 
+.post-title {
+    grid-area: post-title;
+    justify-self: center;
+    text-align: center !important;
+}
+
 .post-card-content {
     grid-area: post-card-content;
+}
+
+.post-content {
+    grid-area: post-content;
+}
+
+.post-image {
+    grid-area: post-image;
+    justify-self: center;
 }
 
 /* The footer links are laid out using CSS3 Flexbox */
@@ -302,8 +389,8 @@ input {
         display: grid;
         grid-template-columns: 0.2fr 0.8fr;
         grid-template-areas:
-                "new-post-user new-post-form"
-                "new-post-user-image new-post-form";
+            "new-post-user new-post-form"
+            "new-post-user-image new-post-form";
     }
 }
 
@@ -323,6 +410,13 @@ input {
             "user-last-posts connected-users";
     }
 
+    .main-post-container {
+        grid-template-columns: 0.75fr 0.25fr;
+        grid-template-areas:
+            "all-users           all-users"
+            "post-detail-section connected-users";
+    }
+
     .main-grid-container {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -338,7 +432,8 @@ input {
     }
 
     #last-posts,
-    #user-last-posts {
+    #user-last-posts,
+    #post-detail-section {
         height: 80vh;
     }
 
@@ -365,7 +460,8 @@ input {
     }
 
     #last-posts,
-    #user-last-posts {
+    #user-last-posts,
+    #post-detail-section {
         height: 70vh;
     }
 }
