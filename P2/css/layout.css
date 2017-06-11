@@ -1,0 +1,580 @@
+/* The following properties define the layout of the webpage */
+/* It starts with a mobile-first design, laying out the elements in a single column */
+/* It uses CSS3 Grid, so it's necessary to define the areas, in this case with "grid-template-areas" */
+
+/* Main container of the webpage */
+.grid-container {
+    display: grid;
+    min-height: 100%;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+/* Container for the header with the login form */
+.header-grid-container {
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+    grid-template-areas:
+        "website-banner"
+        "website-name"
+        "login-form";
+}
+
+/* Container for the header with the user info panel */
+.header-cover-grid-container {
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+    grid-template-areas:
+        "website-banner"
+        "website-name"
+        "user-info-panel"
+        "navigation-panel";
+}
+
+/* Container for the initial webpage */
+.main-grid-container {
+    display: grid;
+    grid-template-areas:
+        "showcase"
+        "register-form";
+}
+
+/* Container for the cover section */
+.main-cover-grid-container {
+    display: grid;
+    grid-template-areas:
+        "all-users"
+        "last-posts"
+        "connected-users";
+}
+
+/* Container for the active bio section */
+/* This container is necessary because of the new post form */
+.main-active-bio {
+    display: grid;
+    grid-template-areas:
+        "all-users"
+        "user-last-posts"
+        "connected-users";
+}
+
+/* Container for the post detail section */
+/* This container is necessary because of the comments list and post comment panel */
+.main-post-container {
+    display: grid;
+    grid-template-areas:
+        "all-users"
+        "post-detail-section"
+        "connected-users";
+}
+
+/* A post card is also a grid container, to easily lay out its components */
+.post-card article {
+    display: grid;
+    grid-template-areas:
+            "post-card-user"
+            "post-card-user-photo"
+            "post-card-title"
+            "post-card-time"
+            "post-card-content";
+}
+
+/* Section for the Comments section and its list */
+.comments-list li {
+    display: grid;
+    grid-template-columns: 0.1fr 0.9fr;
+    grid-template-areas:
+        "comment-user-image comment-user-name "
+        "comment-user-image comment-time      "
+        "comment-text       comment-text      "
+        "comment-text       comment-text      ";
+}
+
+.comment-user-image {
+    grid-area: comment-user-image;
+    justify-self: right;
+    align-self: center;
+}
+
+.comment-text {
+    grid-area: comment-text;
+}
+
+.comment-user-name {
+    grid-area: comment-user-name;
+    justify-self: left;
+}
+
+.comment-time {
+    grid-area: comment-time;
+    justify-self: left;
+}
+
+/* Layout for the detailed view of a post */
+#post-detail-section article {
+    display: grid;
+    grid-template-areas:
+            "post-user"
+            "post-user-photo"
+            "post-title"
+            "post-time"
+            "post-content"
+            "post-image";
+}
+
+/* The following properties are required by CSS3 Grid
+   in order to lay out the elements of the webpage */
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+header {
+    grid-area: header;
+}
+
+#all-users {
+    grid-area: all-users;
+}
+
+#last-posts {
+    grid-area: last-posts;
+}
+
+#connected-users {
+    grid-area: connected-users;
+}
+
+#user-last-posts {
+    grid-area: user-last-posts;
+}
+
+#post-detail-section {
+    grid-area: post-detail-section;
+}
+
+#new-post-section {
+    display: grid;
+    grid-template-areas:
+        "new-post-user"
+        "new-post-user-image"
+        "new-post-form";
+}
+
+#new-post-user {
+    grid-area: new-post-user;
+    justify-self: center;
+    align-self: flex-end;
+}
+
+#new-post-user-image {
+    grid-area: new-post-user-image;
+    justify-self: center;
+    align-self: flex-start;
+}
+
+#new-post-form {
+    grid-area: new-post-form;
+}
+
+#navigation-panel {
+    grid-area: navigation-panel;
+}
+
+#login-form {
+    grid-area: login-form;
+}
+
+#register-form {
+    grid-area: register-form;
+}
+
+#showcase {
+    grid-area: showcase;
+}
+
+#user-info-panel {
+    grid-area: user-info-panel;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#website-banner {
+    grid-area: website-banner;
+    justify-self: center;
+}
+
+#website-name {
+    grid-area: website-name;
+    justify-self: center;
+}
+
+.post-card-user {
+    grid-area: post-card-user;
+    justify-self: center;
+}
+
+.post-user {
+    grid-area: post-user;
+    justify-self: center;
+}
+
+.post-card-user-photo {
+    grid-area: post-card-user-photo;
+    justify-self: center;
+}
+
+.post-user-photo {
+    grid-area: post-user-photo;
+    justify-self: center;
+}
+
+.post-card-time {
+    grid-area: post-card-time;
+    justify-self: center;
+}
+
+.post-time {
+    grid-area: post-time;
+    justify-self: center;
+}
+
+.post-card-title {
+    grid-area: post-card-title;
+    text-align: left !important;
+}
+
+.post-title {
+    grid-area: post-title;
+    justify-self: center;
+    text-align: center !important;
+}
+
+.post-card-content {
+    grid-area: post-card-content;
+}
+
+.post-content {
+    grid-area: post-content;
+}
+
+.post-image {
+    grid-area: post-image;
+    justify-self: center;
+}
+
+/* The footer links are laid out using CSS3 Flexbox */
+.footer-container {
+    grid-area: footer;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/* The list of users, photos and posts are laid out with CSS3 Flexbox */
+#connected-users-list,
+#all-users-list,
+#last-posts-list,
+#photos-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#photos-list {
+    align-items: center;
+}
+
+/* The user box itself is a flexbox in a column mode */
+#connected-users-list li,
+#all-users-list li {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+/* Structure of forms, using CSS3 Flexbox */
+/* The forms' elements are laid out in a column mode */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* The label is always the first shown element */
+label {
+    flex: 1;
+}
+
+/* The input is always the second shown element */
+input {
+    flex: 2;
+}
+
+/* Structure of navigation class, using CSS3 Flexbox */
+/* Based on a mobile-first approach, the navigation buttons
+   are laid out in a column mode when visiting the website on a mobile device */
+.navigation {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+}
+
+/* Adjustments for a tablet display */
+@media (min-width: 768px) {
+    /* In order to get a better responsive design, change the layout and height of some elements based on the viewport size */
+    .header-grid-container {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+            "website-banner website-name login-form";
+    }
+
+    .header-cover-grid-container {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "website-banner website-name user-info-panel"
+            "navigation-panel navigation-panel navigation-panel";
+    }
+
+    .main-grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "showcase register-form";
+    }
+
+    #all-users {
+        height: 25vh;
+    }
+
+    #connected-users {
+        height: 30vh;
+    }
+
+    #last-posts,
+    #user-last-posts {
+        height: 80vh;
+    }
+
+    .post-card {
+        width: 45%;
+    }
+
+    /* Change the layout of the post card */
+    .post-card article {
+        grid-template-areas:
+            "post-card-user       .                 .                 .                "
+            "post-card-user-photo .                 post-card-time    post-card-time   "
+            "post-card-user-photo .                 .                 .                "
+            "post-card-title      post-card-title   post-card-title   .                "
+            "post-card-content    post-card-content post-card-content post-card-content"
+            "post-card-content    post-card-content post-card-content post-card-content";
+    }
+
+    /* Change the layout of the New Post section */
+    #new-post-section {
+        display: grid;
+        grid-template-columns: 0.2fr 0.8fr;
+        grid-template-areas:
+            "new-post-user new-post-form"
+            "new-post-user-image new-post-form";
+    }
+}
+
+/* Adjustments for a small desktop screen */
+@media (min-width: 1024px) {
+    .main-cover-grid-container {
+        grid-template-columns: 0.75fr 0.25fr;
+        grid-template-areas:
+            "all-users all-users"
+            "last-posts connected-users";
+    }
+
+    .main-active-bio {
+        grid-template-columns: 0.75fr 0.25fr;
+        grid-template-areas:
+            "all-users       all-users"
+            "user-last-posts connected-users";
+    }
+
+    .main-post-container {
+        grid-template-columns: 0.75fr 0.25fr;
+        grid-template-areas:
+            "all-users           all-users"
+            "post-detail-section connected-users";
+    }
+
+    .main-grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "showcase register-form";
+    }
+
+    #all-users {
+        height: 30vh;
+    }
+
+    #connected-users {
+        height: 80vh;
+    }
+
+    #last-posts,
+    #user-last-posts,
+    #post-detail-section {
+        height: 80vh;
+    }
+
+    .post-card {
+        width: 30%;
+    }
+}
+
+/* Adjustments for high HD resolutions */
+@media (min-width: 1440px) {
+    .main-cover-grid-container {
+        grid-template-columns: 0.8fr 0.2fr;
+        grid-template-areas:
+            "all-users all-users"
+            "last-posts connected-users";
+    }
+
+    #all-users {
+        height: 21vh;
+    }
+
+    #connected-users {
+        height: 70vh;
+    }
+
+    #last-posts,
+    #user-last-posts,
+    #post-detail-section {
+        height: 70vh;
+    }
+}
+
+/* Small adjustment for 4K resolution */
+@media (min-width: 2560px) {
+    body {
+        max-width: 90%;
+    }
+}
+
+/* When visiting the website using a tablet,
+   display navigation buttons using all the width of the screen */
+@media (min-width: 768px) {
+    .navigation {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+}
+
+/* When visiting the website using a desktop screen,
+   display navigation buttons at the center of the screen in a row mode */
+@media (min-width: 1024px) {
+    .navigation {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
+
+/* Section for the information page */
+/* This layout is for other users, not the active user */
+.profile-grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "profile-header"
+        "profile-image"
+        "profile-information";
+}
+
+/* This layout is for the active user, who has an edit profile form */
+.active-profile-grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+            "profile-header"
+            "active-profile-image"
+            "active-profile-form";
+}
+
+.profile-header {
+    grid-area: profile-header;
+    text-align: center;
+    align-self: center;
+}
+
+.profile-image {
+    grid-area: profile-image;
+    text-align: center;
+    align-self: center;
+}
+
+.active-profile-image {
+    grid-area: active-profile-image;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.profile-information {
+    grid-area: profile-information;
+    text-align: center;
+    align-self: center;
+}
+
+.active-profile-form {
+    grid-area: active-profile-form;
+    align-self: center;
+}
+
+/* When the screen is a tablet or bigger, change the layout */
+@media (min-width: 768px) {
+    .profile-grid-container {
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-areas:
+                ". profile-header profile-header      ."
+                ". profile-image  profile-information .";
+    }
+
+    .active-profile-grid-container {
+        grid-template-areas:
+                ". profile-header       profile-header      ."
+                ". active-profile-image active-profile-form .";
+    }
+
+    .profile-header {
+        justify-self: center;
+    }
+
+    .profile-image {
+        justify-self: right;
+    }
+
+    .profile-information {
+        justify-self: left;
+        text-align: left;
+    }
+
+    .active-profile-image {
+        justify-self: right;
+    }
+    .active-profile-form {
+        justify-self: left;
+    }
+}
+

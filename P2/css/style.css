@@ -1,0 +1,382 @@
+/* Colors:
+Dark blue - #3E454C
+Blue - #2185C5
+Light blue - #7ECEFD
+Beige - #FFF6E5
+Salmon - #FF7F66
+*/
+
+/* Style for the whole webpage */
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    color: #ffffff;
+    background-color: #2185C5;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Special background color for the main header and footer*/
+header.main-header {
+    background-color: #3E454C;
+}
+
+footer.main-footer {
+    background-color: #3E454C;
+}
+
+/* Style for the footer elements */
+footer li {
+    padding: 0 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style for the All Users section */
+#all-users {
+    background-color: #3E454C;
+    height: 30vh;
+    overflow-y: auto;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    padding: 10px;
+}
+
+#all-users h3 {
+    text-align: center;
+}
+
+/* Style for the Last Posts section */
+/* Includes the User Last Posts section */
+#last-posts,
+#user-last-posts,
+#post-detail-section {
+    height: 60vh;
+    background-color: #FFF6E5;
+    color: #3E454C;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+#last-posts h3,
+#user-last-posts h3 {
+    text-align: center;
+}
+
+/* Style for the Connected Users section */
+#connected-users {
+    background-color: #7ECEFD;
+    height: 30vh;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+#connected-users h3,
+#comments-section h3 {
+    text-align: center;
+}
+
+/* Style for the Post Card class */
+.post-card article {
+    padding: 0 10px;
+}
+
+/* Style for the user profile images of the main sections of the website */
+#connected-users-list img,
+#all-users-list img,
+#last-posts-list img,
+#user-last-posts img,
+#user-info-panel img,
+.post-card-user-photo {
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the user image that appears with the new post/comment forms */
+#new-post-section img {
+    height: auto;
+    max-width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 500px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.post-user-photo {
+    height: 100px;
+    border-radius: 500px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the image of a post detail */
+.post-image {
+    width: 80%;
+    height: auto;
+    margin: 10px;
+    border: 1px solid #3E454C;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the Photo Gallery section */
+#photos-list img {
+    height: auto;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    #new-post-section img {
+        height: auto;
+        max-width: 75%;
+        border-radius: 500px;
+    }
+
+    .post-image {
+        width: 50%;
+        height: auto;
+        margin: 10px;
+        border: 1px solid #3E454C;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* Style for the list elements of Connected Users */
+#connected-users-list li {
+    padding: 5px;
+    margin: 5px;
+    min-width: 100px;
+    text-align: center;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: #3E454C;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+/* Style for the list elements of Last Posts */
+#photos-list li,
+#last-posts-list li,
+#post-section,
+#comments-section,
+#post-comment-section {
+    padding: 5px;
+    margin: 5px;
+    min-width: 100px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* Style for the New Post section */
+#new-post-section {
+    padding: 10px;
+    margin: 5px;
+    min-width: 100px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: #7ECEFD;
+    box-sizing: border-box;
+}
+
+#new-post-user {
+    line-height: 0;
+}
+
+/* Style for the list elements of All Users */
+#all-users-list li {
+    padding: 5px;
+    margin: 5px;
+    min-width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #FF7F66;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+/* Common style for the main sections of the cover */
+#connected-users-list,
+#all-users-list,
+#last-posts-list,
+#photos-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#login-form {
+    padding: 0 10%;
+}
+
+#register-form {
+    padding: 10px;
+}
+
+#register-form h1 {
+    text-align: center;
+}
+
+#showcase {
+    text-align: center;
+    padding: 10px;
+}
+
+#user-info-panel {
+    line-height: 0;
+}
+
+#user-info-panel img {
+    margin: 10px;
+}
+
+#website-banner {
+    margin: 10px;
+}
+
+#website-banner img {
+    height: 100px;
+}
+
+#website-name {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 1.5em;
+    line-height: 0;
+}
+
+/* Unvisited link */
+.navigation a:link,
+.footer-container a:link,
+#website-name a:link,
+#user-info-panel a:link,
+#connected-users-list a:link,
+#all-users-list a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.post-card-title a:link {
+    color: #3E454C;
+    text-decoration: none;
+}
+
+/* Visited link */
+.navigation a:visited,
+.footer-container a:visited,
+#website-name a:visited,
+#user-info-panel a:visited,
+#connected-users-list a:visited,
+#all-users-list a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.post-card-title a:visited {
+    color: #3E454C;
+}
+
+/* Mouse over link */
+.footer-container a:hover,
+#website-name a:hover,
+#connected-users-list a:hover {
+    color: #FF7F66;
+}
+
+/* Different hover color for the navigation class */
+.navigation a:hover,
+#all-users-list a:hover,
+#user-info-panel a:hover {
+    color: #3E454C;
+}
+
+.post-card-title a:hover {
+    color: #2185C5;
+}
+
+#user-info-panel h3 a:hover {
+    color: #FF7F66;
+}
+
+/* Section for the style of navigation class */
+.navigation {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    align-items: center;
+}
+
+/* Style for the navigation links */
+.navigation a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    line-height: 2.5;
+    margin: .5rem;
+    padding: .5rem;
+    font-weight: 600;
+    background-color: #7ECEFD;
+    border: 1px solid #7ECEFD;
+    border-radius: 4px;
+}
+
+.navigation a.active {
+    background-color: #FFF6E5;
+    border: 1px solid #FFF6E5;
+    color: #3E454C;
+}
+
+/* Section for the information page */
+.profile-image img,
+.active-profile-image img {
+    height: auto;
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 500px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.profile-image,
+.profile-information,
+.active-profile-form,
+.active-profile-image {
+    padding: 10px;
+}
+
+/* Section for the style of the comments list */
+.comments-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Adjust the profile image of the comments */
+.comment-user-image {
+    height: 100px;
+    border-radius: 500px;
+    margin: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Define a style for every comment */
+.comments-list li {
+    padding: 5px;
+    margin: 5px;
+    min-width: 100px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: #7ECEFD;
+    box-sizing: border-box;
+}
+
+.comment-text {
+    text-align: justify;
+}

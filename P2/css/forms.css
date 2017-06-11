@@ -1,0 +1,68 @@
+/* Stylesheet for the style of forms */
+
+/* Style for all the inputs, select and textarea */
+[type=color],
+[type=date],
+[type=datetime],
+[type=datetime-local],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=url],
+[type=week],
+[type=time],
+select,
+textarea {
+    padding: .25rem;
+    width: 70%;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+#new-post-section input, select, textarea {
+    width: 90%;
+}
+
+#new-post-section input[type=submit], input[type=file] {
+    width: auto;
+}
+
+/* Style for labels */
+label {
+    font-weight: bold;
+    margin: .25rem;
+}
+
+/* Section for the style of buttons */
+.button,
+a.button,
+button,
+[type=file],
+[type=reset],
+[type=submit],
+[type=button] {
+    background: #FF7F66;
+    border: 1px solid #FF7F66;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .95rem;
+    font-family: 'Raleway', sans-serif;
+    padding: .5rem;
+    line-height: 1;
+    margin: .25rem 0;
+    border-radius: 4px;
+}
+
+[type=file] {
+    width: 70%;
+}

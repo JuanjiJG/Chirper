@@ -1,0 +1,16 @@
+/* Stylesheet with the tweak for the contact information section */
+
+/* Hide the checkbox */
+#contact-information-checkbox {
+    display: none;
+}
+
+#label-contact-information {
+    font-weight: normal;
+}
+
+/* Basic style for the contact information */
+#contact-information {
+    padding: 10px;
+    text-align: center;
+}
