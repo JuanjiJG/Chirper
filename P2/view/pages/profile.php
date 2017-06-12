@@ -23,7 +23,7 @@
                     <label for="password">Contraseña</label>
                     <input id="password" name="edit-password" type="password" value="" required="required">
                     <label for="repeat-password">Repite la contraseña</label>
-                    <input id="repeat-password" name="edit-frepeat-password" value="" type="password"
+                    <input id="repeat-password" name="edit-repeat-password" value="" type="password"
                            required="required">
                     <input type="submit" name="submit" value="Editar perfil">
                     <input type="reset" name="reset" value="Reiniciar formulario">
